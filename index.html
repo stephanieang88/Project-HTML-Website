@@ -1,0 +1,331 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<!--
+    		Author: 	Stephanie Ang
+    		Completed:  20 Aug 2017
+    		Notes: 		Assignment 3
+    	-->
+    	<title>aloha...your place to relax &amp; enjoy</title>
+    	<!-- Bootstrap CSS -->
+    	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Custom CSS -->
+    	<link href="includes/css/styles.css" rel="stylesheet">
+		<!-- Font Awesome CSS -->
+    	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+        <link rel="shortcut icon" href="images/favicon.png">
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+        <link rel="icon" sizes="192x192" href="images/android.png">
+ 	</head>
+ 	<body>
+        <!-- Social Media Icons on top -->
+        <div class="container" id="social-media-icon-top">
+           <ul class="navbar-nav navbar-right">
+                <li><a href="https://www.facebook.com/pages/Aloha-Loyang-Seaview-Bungalow/203583413002008" target="_blank"><img src="images/Icon-Facebook.png" width="25px" height="auto"></a></li>
+                <li><a href="#modial-contact-us" role="button" data-toggle="modal"><img src="images/Icon-Message.png" width="25px" height="auto"></a></li>
+            </ul>
+        </div>
+        <!-- Navigation Bar & Logo -->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="images/Logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="sub_changi.html"><span>aloha</span><br>Changi</a></li>
+                        <li><a href="sub_loyang.html"><span>aloha</span><br>Loyang</a></li>
+                        <li><a href="sub_cameron.html"><span>aloha</span><br>Cameron</a></li>
+                        <li><a href="sub_fraser.html"><span>aloha</span><br>Fraser</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Chalet Booking Panel -->
+        <div class="container-fluid" id="booking-panel">
+            <div class="container">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="ResortName">Book your getaway</label>
+                        <br class="visible-sm">
+                        <select class="form-control">
+                            <option></option>
+                            <option>aloha Changi</option>
+                            <option>aloha Loyang</option>
+                            <option>aloha Cameron</option>
+                            <option>aloha Fraser</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Check-in">Check-In:</label>
+                        <br class="visible-sm">
+                        <input type="date" class="form-control" id="Check-In">
+                    </div>
+                    <div class="form-group">
+                        <label for="Check-in">Check-Out:</label>
+                        <br class="visible-sm">
+                        <input type="date" class="form-control" id="Check-Out">
+                    </div>
+                    <button type="submit" class="btn btn-default btn-lg">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!-- Social Media & Phone Icons (Visible on small mobile devices) -->
+        <div class="container-fluid visible-xs">
+            <ul class="list-unstyled mobile-icons-header-homepage">
+                <li><a href="https://www.facebook.com/pages/Aloha-Loyang-Seaview-Bungalow/203583413002008" target="_blank"><img src="images/Icon-Facebook.png" height="50px" width="auto"></a></li>
+                <li><a href="#modial-contact-us" role="button" data-toggle="modal"><img src="images/Icon-Message.png" width="50px" height="auto"></a></li>
+                <li><a href="#"><img src="images/Icon-Phone.png" height="50px" width="auto"></a></li>
+            </ul>
+        </div>
+        <!-- Social Media & Phone Icons (Visible on tablets, 768px and up) -->
+        <div class="container visible-sm">
+            <ul class="list-unstyled mobile-icons-header">
+                <li><a href="https://www.facebook.com/pages/Aloha-Loyang-Seaview-Bungalow/203583413002008" target="_blank"><img src="images/Icon-Facebook.png" height="35px" width="auto"></a></li>
+                <li><a href="#modial-contact-us" role="button" data-toggle="modal"><img src="images/Icon-Message.png" width="35px" height="auto"></a></li>
+            </ul>
+        </div>
+        <!-- Contact Us Form in a "Mondial Window" -->
+        <div class="modal fade" id="modial-contact-us" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Contact Us</h4>
+                    </div>
+                    <div class="modal-body">
+                         <form class="contact-form" action="results.html">
+                            <fieldset class="contactinfo">
+                               <label for="nameinput" class="control-label">
+                                  Name
+                                  <input class="form-control" type="text" name="name" id="nameinput" placeholder="First & Last Name" required>
+                               </label><br>
+                               <label for="emailinput" class="control-label">
+                                  Email
+                                  <input class="form-control" type="email" name="email" id="emailinput" placeholder="address@example.com" required>
+                               </label><br>
+                               <label for="phoneinput" class="control-label">
+                                    Phone
+                                    <input class="form-control" type="tel" name="phone" id="phoneinput" placeholder="+65-12345678" required>
+                               </label><br>
+                            </fieldset>
+                            <fieldset class="additionalinfo">
+                               <label for="other-info" class="control-label">
+                                  Message<br>
+                                  <textarea class="form-control" name="other-info" id="other-info" rows="5" cols="50" required></textarea>
+                               </label>
+                            </fieldset>
+                            <fieldset class="submitbutton">
+                                <button type="submit" class="btn btn-info">Send</button>
+                            </fieldset>
+                         </form>
+                    </div>
+                    <hr>
+                    <div class="feedback-preview">
+                        <div class="row">
+                           <div class="col-sm-3">
+                              <p>To: </p>
+                           </div>
+                           <div class="col-sm-9">
+                              <p>Aloha Loyang &amp; Resorts Headquarters</p>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-sm-3">
+                              <p>From:</p>
+                           </div>
+                           <div class="col-sm-9">
+                              <p class="feedback-from"></p>
+                           </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p>Email:</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="feedback-email"></p>
+                           </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p>Phone:</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="feedback-phone"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p>Message:</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="feedback-content"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end of Contact Us Form in a "Mondial Window" -->
+        <!-- Start of Homepage Body -->
+        <div class="container Homepage" id="Homepage-Changi">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="text-center">"A home away from home"</h2>
+                </div>
+                <div class="col-xs-12">
+                    <img src="images/Homepage_ChangiMain.jpg" width="100%" height="auto" alt="Changi Cottage">
+                </div>
+                <div class="col-xs-6 hidden-xs" id="home-sub-image">
+                    <img src="images/Homepage_ChangiSub.jpg" width="100%" height="auto" alt="Changi Cottage dining room">
+                </div>
+                <div class="col-xs-5 hidden-xs">
+                    <h1 class="text-center"><span>aloha</span> Changi</h1>
+                    <h4 class="text-center">SINGAPORE</h4>
+                    <p class="text-center">Located in the east with 49 colonial bungalows and terraces ranging from 1 to 6 bedrooms, Aloha Changi offers plenty of choices for your ideal home away from home getaway.</p>
+                </div>
+                <div class="col-xs-10 visible-xs">
+                    <h1 class="text-center"><span>aloha</span> Changi</h1>
+                    <h4 class="text-center">SINGAPORE</h4>
+                    <p class="text-center">Located in the east with 49 colonial bungalows and terraces ranging from 1 to 6 bedrooms, Aloha Changi offers plenty of choices for your ideal home away from home getaway.</p>
+                </div>
+                <div class="col-xs-1">
+                    <a href="sub_changi.html"><img src="images/Icon-Arrow-Right.png">
+                </div>
+            </div>
+        </div>
+        <div class="container Homepage" id="Homepage-Loyang">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="text-center">"A place to relax and enjoy"</h2>
+                </div>
+                <div class="col-xs-12">
+                    <img src="images/Homepage_LoyangMain.jpg" width="100%" height="auto" alt="Pool Terraces">
+                </div>
+                <div class="col-xs-5 hidden-xs">
+                    <h1 class="text-center"><span>aloha</span> Loyang</h1>
+                    <h4 class="text-center">SINGAPORE</h4>
+                    <p class="text-center">Located along the Pasir Ris beach with 38 bungalows and terraces ranging from 2 to 4 bedrooms, Aloha Loyang is the perfect location for a quick getaway for you and your loved ones.</p>
+                </div>
+                <div class="col-xs-10 visible-xs">
+                    <h1 class="text-center"><span>aloha</span> Loyang</h1>
+                    <h4 class="text-center">SINGAPORE</h4>
+                    <p class="text-center">Located along the Pasir Ris beach with 38 bungalows and terraces ranging from 2 to 4 bedrooms, Aloha Loyang is the perfect location for a quick getaway for you and your loved ones.</p>
+                </div>
+                <div class="col-xs-1">
+                    <a href="sub_loyang.html"><img src="images/Icon-Arrow-Right.png">
+                </div>
+                <div class="col-xs-6 hidden-xs" id="home-sub-image">
+                    <img src="images/Homepage_LoyangSub.jpg" width="100%" height="auto" alt="Pool Terraces living room">
+                </div>
+            </div>
+        </div>
+        <div class="container Homepage" id="Homepage-Cameron">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="text-center">"A cooling getaway in Cameron Highlands"</h2>
+                </div>
+                <div class="col-xs-12">
+                    <img src="images/Homepage_CameronMain.jpg" width="100%" height="auto" alt="Cluny Lodge">
+                </div>
+                <div class="col-xs-6 hidden-xs" id="home-sub-image">
+                    <img src="images/Homepage_CameronSub.jpg" width="100%" height="auto" alt="Cluny Lodge dining room">
+                </div>
+                <div class="col-xs-5 hidden-xs">
+                    <h1 class="text-center"><span>aloha</span> Cameron</h1>
+                    <h4 class="text-center">MALAYSIA</h4>
+                    <p class="text-center">Cluny Lodge, the main cottage of Aloha Cameron, offers 8 rooms to guests who wish to experience a getaway in the year long cooling weather of Cameron Highlands.</p>
+                </div>
+                <div class="col-xs-10 visible-xs">
+                    <h1 class="text-center"><span>aloha</span> Cameron</h1>
+                    <h4 class="text-center">MALAYSIA</h4>
+                    <p class="text-center">Cluny Lodge, the main cottage of Aloha Cameron, offers 8 rooms to guests who wish to experience a getaway in the year long cooling weather of Cameron Highlands.</p>
+                </div>
+                <div class="col-xs-1">
+                    <a href="sub_cameron.html"><img src="images/Icon-Arrow-Right.png">
+                </div>
+            </div>
+        </div>
+        <div class="container Homepage" id="Homepage-Fraser">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="text-center">"A cooling retreat for golf fanatics in Fraser's Hill"</h2>
+                </div>
+                <div class="col-xs-12">
+                    <img src="images/Homepage_FraserMain.jpg" width="100%" height="auto" alt="Singapore House">
+                </div>
+                <div class="col-xs-5 hidden-xs">
+                    <h1 class="text-center"><span>aloha</span> Fraser</h1>
+                    <h4 class="text-center">MALAYSIA</h4>
+                    <p class="text-center">The Richmond Bungalows offers 5 rooms while Singapore House offers 4 rooms to guests who wish to experience a  getaway in the year-long cooling weather of Fraser’s Hills.</p>
+                </div>
+                <div class="col-xs-10 visible-xs">
+                    <h1 class="text-center"><span>aloha</span> Fraser</h1>
+                    <h4 class="text-center">MALAYSIA</h4>
+                    <p class="text-center">The Richmond Bungalows offers 5 rooms while Singapore House offers 4 rooms to guests who wish to experience a  getaway in the year-long cooling weather of Fraser’s Hills.</p>
+                </div>
+                <div class="col-xs-1">
+                    <a href="sub_fraser.html"><img src="images/Icon-Arrow-Right.png">
+                </div>
+                <div class="col-xs-6 hidden-xs" id="home-sub-image">
+                    <img src="images/Homepage_FraserSub.jpg" width="100%" height="auto" alt="Singapore House living room">
+                </div>
+            </div>
+        </div><!-- End of Homepage Body -->
+        <footer class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h5>Disclaimer:</h5>
+                        <p>Purpose of this website is for CA3 Assignment Submission only</p>
+                        <p>For the purpose of this assignment, all photographic images used in this website are downloaded from www.aloharesorts.com.sg</p>
+                        <p>Credits to be given to www.icons8.com for all the free icons used in this website</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5>Navigation:</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Regulations &amp; Information</a></li>
+                            <li><a href="#">Privacy Statement</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5>Updates:</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">What's Happening</a></li>
+                            <li><a href="#">Upcoming Events</a></li>
+                            <li><a href="#">Aloha News</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row" id="copyright">
+                    <div class="col-xs-12">
+                        <h5>Copyright &copy; 2017 All Rights Reserved. Aloha Resorts.</h5>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+	    <!-- Custom JS -->
+	    <script src="includes/js/script.js"></script>
+	</body>
+</html>

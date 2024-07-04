@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<!--
+    		Author: 	Stephanie Ang
+    		Completed:  20 Aug 2017
+    		Notes: 		Assignment 3
+    	-->
+    	<title>aloha...your place to relax &amp; enjoy</title>
+    	<!-- Bootstrap CSS -->
+    	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Custom CSS -->
+    	<link href="includes/css/styles.css" rel="stylesheet">
+		<!-- Font Awesome CSS -->
+    	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+        <link rel="shortcut icon" href="images/favicon.png">
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+        <link rel="icon" sizes="192x192" href="images/android.png">
+ 	</head>
+ 	<body>
+        <!-- Social Media Icons on top -->
+        <div class="container" id="social-media-icon-top">
+           <ul class="navbar-nav navbar-right">
+                <li><a href="https://www.facebook.com/pages/Aloha-Loyang-Seaview-Bungalow/203583413002008" target="_blank"><img src="images/Icon-Facebook.png" width="25px" height="auto"></a></li>
+                <li><a href="#modial-contact-us" role="button" data-toggle="modal"><img src="images/Icon-Message.png" width="25px" height="auto"></a></li>
+            </ul>
+        </div>
+        <!-- Navigation Bar & Logo -->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/Logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="sub_changi.html"><span>aloha</span><br>Changi</a></li>
+                        <li><a href="sub_loyang.html"><span>aloha</span><br>Loyang</a></li>
+                        <li><a href="sub_cameron.html"><span>aloha</span><br>Cameron</a></li>
+                        <li class="active"><a href="#"><span>aloha</span><br>Fraser</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Chalet Booking Panel (Visible on tablets, 768px and up) -->
+        <div class="container-fluid hidden-xs" id="booking-panel">
+            <div class="container">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="ResortName">Book your getaway</label>
+                        <br class="visible-sm">
+                        <select class="form-control">
+                            <option></option>
+                            <option>aloha Changi</option>
+                            <option>aloha Loyang</option>
+                            <option>aloha Cameron</option>
+                            <option>aloha Fraser</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Check-in">Check-In:</label>
+                        <br class="visible-sm">
+                        <input type="date" class="form-control" id="Check-In">
+                    </div>
+                    <div class="form-group">
+                        <label for="Check-in">Check-Out:</label>
+                        <br class="visible-sm">
+                        <input type="date" class="form-control" id="Check-Out">
+                    </div>
+                    <button type="submit" class="btn btn-default btn-lg">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!-- Social Media & Phone Icons (Visible on small mobile devices) -->
+        <div class="container-fluid visible-xs">
+            <h1><span>aloha</span> Fraser</h1>
+            <ul class="list-unstyled mobile-icons-header">
+                <li><a href="https://www.facebook.com/pages/Aloha-Loyang-Seaview-Bungalow/203583413002008" target="_blank"><img src="images/Icon-Facebook.png" height="50px" width="auto"></a></li>
+                <li><a href="#modial-contact-us" role="button" data-toggle="modal"><img src="images/Icon-Message.png" width="50px" height="auto"></a></li>
+                <li><a href="#"><img src="images/Icon-Phone.png" height="50px" width="auto"></a></li>
+            </ul>
+        </div>
+        <!-- Social Media & Phone Icons (Visible on tablets, 768px and up) -->
+        <div class="container visible-sm">
+            <ul class="list-unstyled mobile-icons-header">
+                <li><a href="https://www.facebook.com/pages/Aloha-Loyang-Seaview-Bungalow/203583413002008" target="_blank"><img src="images/Icon-Facebook.png" height="35px" width="auto"></a></li>
+                <li><a href="#modial-contact-us" role="button" data-toggle="modal"><img src="images/Icon-Message.png" width="35px" height="auto"></a></li>
+            </ul>
+        </div>
+        <!-- Contact Us Form in a "Mondial Window" -->
+        <div class="modal fade" id="modial-contact-us" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Contact Us</h4>
+                    </div>
+                    <div class="modal-body">
+                         <form class="contact-form" action="results.html">
+                            <fieldset class="contactinfo">
+                               <label for="nameinput" class="control-label">
+                                  Name
+                                  <input class="form-control" type="text" name="name" id="nameinput" placeholder="First & Last Name" required>
+                               </label><br>
+                               <label for="emailinput" class="control-label">
+                                  Email
+                                  <input class="form-control" type="email" name="email" id="emailinput" placeholder="address@example.com" required>
+                               </label><br>
+                               <label for="phoneinput" class="control-label">
+                                    Phone
+                                    <input class="form-control" type="tel" name="phone" id="phoneinput" placeholder="+65-12345678" required>
+                               </label><br>
+                            </fieldset>
+                            <fieldset class="additionalinfo">
+                               <label for="other-info" class="control-label">
+                                  Message<br>
+                                  <textarea class="form-control" name="other-info" id="other-info" rows="5" cols="50" required></textarea>
+                               </label>
+                            </fieldset>
+                            <fieldset class="submitbutton">
+                                <button type="submit" class="btn btn-info">Send</button>
+                            </fieldset>
+                         </form>
+                    </div>
+                    <hr>
+                    <div class="feedback-preview">
+                        <div class="row">
+                           <div class="col-sm-3">
+                              <p>To: </p>
+                           </div>
+                           <div class="col-sm-9">
+                              <p>Aloha Loyang &amp; Resorts Headquarters</p>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-sm-3">
+                              <p>From:</p>
+                           </div>
+                           <div class="col-sm-9">
+                              <p class="feedback-from"></p>
+                           </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p>Email:</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="feedback-email"></p>
+                           </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p>Phone:</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="feedback-phone"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p>Message:</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="feedback-content"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end of Contact Us Form in a "Mondial Window" -->
+        <!-- Page Navigation Panel with Button Icons -->
+        <div class="container">
+            <ul class="nav nav-pills">
+                <li role="presentation"><a class="btn btn-default" href="#accordion"><img src="images/Icon-Bed.png" height="25px" width="auto" aria-hidden="true"> Accommodation</a></li>
+                <li role="presentation"><a class="btn btn-default" href="#resort-location"><img src="images/Icon-Google-Map.png" height="25px" width="auto" aria-hidden="true"> Location</a></li>
+                <li role="presentation" class="hidden-xs"><a class="btn btn-default"><img src="images/Icon-Phone.png" height="25px" width="auto" aria-hidden="true"> +60 09 3622235</a></li>
+            </ul>
+        </div>
+        <!-- Aloha Fraser Main Body-->
+        <div class="container alohaFraser">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>Fraser’s Hill is popular as a site for company retreats and weekends. The golf fanatic will find enough on the hill to occupy his days and non-golfers may just decide to spend their time horseback riding or simply strolling along the picturesque lanes that weave through the green countryside. The fresh mountain air is cool and invigorating.</p>
+                    <p>The Richmond Bungalows offers 5 rooms while Singapore House offers 4 rooms to guests who wish to experience a getaway in the year-long cooling weather of Fraser’s Hills. Fraser’s Hill has been one of the last few original British towns out of England. This place is also known as ‘Little England’ as most of the buildings don the famous mock Tudor with granite coloured walls.</p>
+                    <p>Being high up in the mountains, moisture and cool are predominant features of the climate up on the hills. Temperatures usually range between 22°C – 28°C during the day and 16°C to 20°C at night.</p>
+                </div>
+            </div>
+            <!-- Accommodation Section using Accordion -->
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <h1><img src="images/Icon-Boot.png" height="40px" width="auto" aria-hidden="true"> Accomodation</h1>
+                <div class="panel panel-default"> <!-- start of 1st Accordion for Richmond Bungalow -->
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Richmond Bungalow <span class="glyphicon glyphicon-menu-down"></span></a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            <!-- Carousel for Aloha Fraser Richmond Bungalow -->
+                            <div id="fraser-richmond-bungalow" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#fraser-richmond-bungalow" data-slide-to="0" class="active"></li>
+                                    <li data-target="#fraser-richmond-bungalow" data-slide-to="1"></li>
+                                </ol>
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <img src="images/Fraser_RichmondBungalow1.jpg" width="100%" height="auto" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/Fraser_RichmondBungalow2.jpg" width="100%" height="auto" alt="...">
+                                    </div>
+                                </div>
+                                <!-- Controls -->
+                                <a class="left carousel-control" href="#fraser-richmond-bungalow" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#fraser-richmond-bungalow" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            <div class="col-sm-9">
+                                <ul class="list-unstyled">
+                                    <li><img src="images/Icon-Electric-Pot.png" height="25px" width="auto" aria-hidden="true"> Electric Air-pot provided</li>
+                                    <li><img src="images/Icon-Teacup.png" height="25px" width="auto" aria-hidden="true"> Teacups provided</li>
+                                    <li><img src="images/Icon-Towel.png" height="25px" width="auto" aria-hidden="true"> Towels provided</li>
+                                    <li><img src="images/Icon-Shower.png" height="25px" width="auto" aria-hidden="true"> Attached Bathroom</li>
+                                    <li><img src="images/Icon-Poker-Cards.png" height="25px" width="auto" aria-hidden="true"> Common Recreation Room</li>
+                                    <li><img src="images/Icon-Living-Room.png" height="25px" width="auto" aria-hidden="true"> Common Living Room</li>
+                                    <li><img src="images/Icon-Dining-Room.png" height="25px" width="auto" aria-hidden="true"> Common Dining Room</li>
+                                    <li><img src="images/Icon-Cooker.png" height="25px" width="auto" aria-hidden="true"> Staff Kitchen</li>
+                                    <li><img src="images/Icon-Sleeping-Bed.png" height="25px" width="auto" aria-hidden="true"> 5 Rooms available for individual booking</li>
+                                    <li>
+                                        <ul class="list-unstyled list-inline" id="capacity">
+                                            <img src="images/Icon-Cabin.png" height="25px" width="auto" aria-hidden="true">
+                                            <li>Capacity per Room</li>
+                                            <li>-</li>
+                                            <li>Day: <i class="fa fa-user-times fa-lg"></i> 3</li>
+                                            <li> Night: <i class="fa fa-user-times fa-lg"></i> 3</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p>It is a single-storey cottage with five bedrooms, a common recreation room, a common living room and a common dining room. While staying in Richmond Bungalow, you could request our friendly staff members to prepare delicious meal to your preferences.</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <h2>GARDEN<br>VIEW</h2>
+                                <div class="price-tag">
+                                    <ul class="list-unstyled">
+                                        <li><img src="images/Icon-Price-Tag.png" height="60px" width="auto" aria-hidden="true"></li>
+                                        <li><span>FROM</span><br> S$105*</li>
+                                    </ul>
+                                    <a class="btn btn-default btn-lg" href="#" role="button">BOOK NOW</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12" id="arrow-menu-up">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span class="glyphicon glyphicon-menu-up"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end of 1st Accordion -->
+                <div class="panel panel-default"> <!-- start of 2nd Accordion for Singapore House -->
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Singapore House <span class="glyphicon glyphicon-menu-down"></span></a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                            <!-- Carousel for Aloha Loyang Garden Bungalows -->
+                            <div id="fraser-singapore-house" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#fraser-singapore-house" data-slide-to="0" class="active"></li>
+                                    <li data-target="#fraser-singapore-house" data-slide-to="1"></li>
+                                </ol>
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <img src="images/Fraser_SingaporeHouse1.jpg" width="100%" height="auto" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/Fraser_SingaporeHouse2.jpg" width="100%" height="auto" alt="...">
+                                    </div>
+                                </div>
+                                <!-- Controls -->
+                                <a class="left carousel-control" href="#fraser-singapore-house" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#fraser-singapore-house" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            <div class="col-sm-9">
+                                <ul class="list-unstyled">
+                                    <li><img src="images/Icon-Electric-Pot.png" height="25px" width="auto" aria-hidden="true"> Electric Air-pot provided</li>
+                                    <li><img src="images/Icon-Teacup.png" height="25px" width="auto" aria-hidden="true"> Teacups provided</li>
+                                    <li><img src="images/Icon-Towel.png" height="25px" width="auto" aria-hidden="true"> Towels provided</li>
+                                    <li><img src="images/Icon-Shower.png" height="25px" width="auto" aria-hidden="true"> Attached Bathroom</li>
+                                    <li><img src="images/Icon-Poker-Cards.png" height="25px" width="auto" aria-hidden="true"> Common Recreation Room</li>
+                                    <li><img src="images/Icon-Living-Room.png" height="25px" width="auto" aria-hidden="true"> Common Living Room</li>
+                                    <li><img src="images/Icon-Dining-Room.png" height="25px" width="auto" aria-hidden="true"> Common Dining Room</li>
+                                    <li><img src="images/Icon-Cooker.png" height="25px" width="auto" aria-hidden="true"> Staff Kitchen</li>
+                                    <li><img src="images/Icon-Sleeping-Bed.png" height="25px" width="auto" aria-hidden="true"> 5 Rooms available for individual booking</li>
+                                    <li>
+                                        <ul class="list-unstyled list-inline" id="capacity">
+                                            <img src="images/Icon-Cabin.png" height="25px" width="auto" aria-hidden="true">
+                                            <li>Capacity per Room</li>
+                                            <li>-</li>
+                                            <li>Day: <i class="fa fa-user-times fa-lg"></i> 3</li>
+                                            <li> Night: <i class="fa fa-user-times fa-lg"></i> 3</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p>It is a single-storey cottage with four bedrooms and a common living room with dining room . While staying in Singapore House, you could request our friendly staff to prepare delicious meal to your preferences.</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <h2>GARDEN<br>VIEW</h2>
+                                <div class="price-tag">
+                                    <ul class="list-unstyled">
+                                        <li><img src="images/Icon-Price-Tag.png" height="60px" width="auto" aria-hidden="true"></li>
+                                        <li><span>FROM</span><br> S$75*</li>
+                                    </ul>
+                                    <a class="btn btn-default btn-lg" href="#" role="button">BOOK NOW</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12" id="arrow-menu-up">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"><span class="glyphicon glyphicon-menu-up"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end of 2nd Accordion -->
+            </div>
+            <!-- end of Accomodation section using Accordion -->
+            <a class="circle-arrow-up" href="#"><span class="glyphicon glyphicon-circle-arrow-up"></span></a>
+            <!-- Location Section -->
+            <div class="row" id="resort-location">
+                <div class="col-xs-12">
+                    <h1><img src="images/Icon-Boot.png" height="40px" width="auto" aria-hidden="true"> Location</h1>
+                    <div class="col-sm-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.4472459058043!2d101.74160189999999!3d3.7121681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cbf4fb2fa3c34f%3A0xbff94fb908427525!2sRichmond+Bungalow!5e0!3m2!1sen!2ssg!4v1502894449738" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.4671573271503!2d101.73674211461827!3d3.707749050498929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cbf4e31d5c60ed%3A0xc73858d280a1d672!2sSingapore+House+Fraser&#39;s+Hill!5e0!3m2!1sen!2ssg!4v1502894582349" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3>Getting Here</h3>
+                        <h4>By Car</h4>
+                        <p><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Fraser's Hill lies about 100km away north from Kuala Lumpur, or 400km from Singapore. Visitors can travel through Kuala Kubu Bharu (KKB) or Bentong town to reach this highland resort destination. Using the Bentong route, you take the Karak Highway, passing by Genting Highlands and turning off at Bentong. A junction to Bukit Frasers pops up along the main road a few km after town. Alternatively, a trunk road leads from Gombak to Bentong through Janda Baik if you wish to avoid paying toll.</p>
+                        <p>On the other hand, using the North-South Highway from Kuala Lumpur will require a detour at the Kuala Kubu Bharu exit. Follow the signboards to Bukit Fraser from KKB to get on the right track. Again, to avoid paying toll, you can use the trunk road from Batu Caves, going through Rawang and turn right at the Kuala Kubu Bharu junction.</p>
+                        <p>From northern destinations, such as Penang, you only need to drive down the North-South Highway (or trunk road) past Ipoh towards Rawang. Eventually, there will be a turn-off to Kuala Kubu Bharu before the Rawang exit; turn here and follow the directions towards Fraser's Hill from town.</p>
+                        <h6>To Singapore House:</h6>
+                        <p>From the Gap, drive uphill and turn right to Mager Road. Follow Mager Road and turn right to Padang Road. Singapore House is just at the junction of Mager Road and Padang Road.</p>
+                        <h4>By Train</h4>
+                        <p><i class="fa fa-subway" aria-hidden="true"></i> By railway, the KTM Train from KL Sentral stops at KKB station; you then need a taxi to bring you up. Do make arrangements with the driver to bring you back, as Fraser's Hill does not have any cabs. </p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of Location Section -->
+            <a class="circle-arrow-up" href="#"><span class="glyphicon glyphicon-circle-arrow-up"></span></a>
+        </div> <!-- Aloha Fraser Main Body end div-->
+        <footer class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h5>Disclaimer:</h5>
+                        <p>Purpose of this website is for CA3 Assignment Submission only</p>
+                        <p>For the purpose of this assignment, all photographic images used in this website are downloaded from www.aloharesorts.com.sg</p>
+                        <p>Credits to be given to www.icons8.com for all the free icons used in this website</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5>Navigation:</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Regulations &amp; Information</a></li>
+                            <li><a href="#">Privacy Statement</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5>Updates:</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">What's Happening</a></li>
+                            <li><a href="#">Upcoming Events</a></li>
+                            <li><a href="#">Aloha News</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row" id="copyright">
+                    <div class="col-xs-12">
+                        <h5>Copyright &copy; 2017 All Rights Reserved. Aloha Resorts.</h5>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+	    <!-- Custom JS -->
+	    <script src="includes/js/script.js"></script>
+	</body>
+</html>

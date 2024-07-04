@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<!--
+    		Author: 	Stephanie Ang
+    		Completed:  20 Aug 2017
+    		Notes: 		Assignment 3
+    	-->
+    	<title>aloha...your place to relax &amp; enjoy</title>
+    	<!-- Bootstrap CSS -->
+    	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Custom CSS -->
+    	<link href="includes/css/styles.css" rel="stylesheet">
+		<!-- Font Awesome CSS -->
+    	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+        <link rel="shortcut icon" href="images/favicon.png">
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+        <link rel="icon" sizes="192x192" href="images/android.png">
+ 	</head>
+ 	<body>
+        <!-- Social Media Icons on top -->
+        <div class="container" id="social-media-icon-top">
+           <ul class="navbar-nav navbar-right">
+                <li><a href="https://www.facebook.com/pages/Aloha-Loyang-Seaview-Bungalow/203583413002008" target="_blank"><img src="images/Icon-Facebook.png" width="25px" height="auto"></a></li>
+                <li><a href="#modial-contact-us" role="button" data-toggle="modal"><img src="images/Icon-Message.png" width="25px" height="auto"></a></li>
+            </ul>
+        </div>
+        <!-- Navigation Bar & Logo -->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/Logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="sub_changi.html"><span>aloha</span><br>Changi</a></li>
+                        <li><a href="sub_loyang.html"><span>aloha</span><br>Loyang</a></li>
+                        <li class="active"><a href="#"><span>aloha</span><br>Cameron</a></li>
+                        <li><a href="sub_fraser.html"><span>aloha</span><br>Fraser</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Chalet Booking Panel (Visible on tablets, 768px and up) -->
+        <div class="container-fluid hidden-xs" id="booking-panel">
+            <div class="container">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="ResortName">Book your getaway</label>
+                        <br class="visible-sm">
+                        <select class="form-control">
+                            <option></option>
+                            <option>aloha Changi</option>
+                            <option>aloha Loyang</option>
+                            <option>aloha Cameron</option>
+                            <option>aloha Fraser</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Check-in">Check-In:</label>
+                        <br class="visible-sm">
+                        <input type="date" class="form-control" id="Check-In">
+                    </div>
+                    <div class="form-group">
+                        <label for="Check-in">Check-Out:</label>
+                        <br class="visible-sm">
+                        <input type="date" class="form-control" id="Check-Out">
+                    </div>
+                    <button type="submit" class="btn btn-default btn-lg">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!-- Social Media & Phone Icons (Visible on small mobile devices) -->
+        <div class="container-fluid visible-xs">
+            <h1><span>aloha</span> Cameron</h1>
+            <ul class="list-unstyled mobile-icons-header">
+                <li><a href="https://www.facebook.com/pages/Aloha-Loyang-Seaview-Bungalow/203583413002008" target="_blank"><img src="images/Icon-Facebook.png" height="50px" width="auto"></a></li>
+                <li><a href="#modial-contact-us" role="button" data-toggle="modal"><img src="images/Icon-Message.png" width="50px" height="auto"></a></li>
+                <li><a href="#"><img src="images/Icon-Phone.png" height="50px" width="auto"></a></li>
+            </ul>
+        </div>
+        <!-- Social Media & Phone Icons (Visible on tablets, 768px and up) -->
+        <div class="container visible-sm">
+            <ul class="list-unstyled mobile-icons-header">
+                <li><a href="https://www.facebook.com/pages/Aloha-Loyang-Seaview-Bungalow/203583413002008" target="_blank"><img src="images/Icon-Facebook.png" height="35px" width="auto"></a></li>
+                <li><a href="#modial-contact-us" role="button" data-toggle="modal"><img src="images/Icon-Message.png" width="35px" height="auto"></a></li>
+            </ul>
+        </div>
+        <!-- Contact Us Form in a "Mondial Window" -->
+        <div class="modal fade" id="modial-contact-us" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Contact Us</h4>
+                    </div>
+                    <div class="modal-body">
+                         <form class="contact-form" action="results.html">
+                            <fieldset class="contactinfo">
+                               <label for="nameinput" class="control-label">
+                                  Name
+                                  <input class="form-control" type="text" name="name" id="nameinput" placeholder="First & Last Name" required>
+                               </label><br>
+                               <label for="emailinput" class="control-label">
+                                  Email
+                                  <input class="form-control" type="email" name="email" id="emailinput" placeholder="address@example.com" required>
+                               </label><br>
+                               <label for="phoneinput" class="control-label">
+                                    Phone
+                                    <input class="form-control" type="tel" name="phone" id="phoneinput" placeholder="+65-12345678" required>
+                               </label><br>
+                            </fieldset>
+                            <fieldset class="additionalinfo">
+                               <label for="other-info" class="control-label">
+                                  Message<br>
+                                  <textarea class="form-control" name="other-info" id="other-info" rows="5" cols="50" required></textarea>
+                               </label>
+                            </fieldset>
+                            <fieldset class="submitbutton">
+                                <button type="submit" class="btn btn-info">Send</button>
+                            </fieldset>
+                         </form>
+                    </div>
+                    <hr>
+                    <div class="feedback-preview">
+                        <div class="row">
+                           <div class="col-sm-3">
+                              <p>To: </p>
+                           </div>
+                           <div class="col-sm-9">
+                              <p>Aloha Loyang &amp; Resorts Headquarters</p>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-sm-3">
+                              <p>From:</p>
+                           </div>
+                           <div class="col-sm-9">
+                              <p class="feedback-from"></p>
+                           </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p>Email:</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="feedback-email"></p>
+                           </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p>Phone:</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="feedback-phone"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p>Message:</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="feedback-content"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end of Contact Us Form in a "Mondial Window" -->
+        <!-- Page Navigation Panel with Button Icons -->
+        <div class="container">
+            <ul class="nav nav-pills">
+                <li role="presentation"><a class="btn btn-default" href="#accordion"><img src="images/Icon-Bed.png" height="25px" width="auto" aria-hidden="true"> Accommodation</a></li>
+                <li role="presentation"><a class="btn btn-default" href="#resort-location"><img src="images/Icon-Google-Map.png" height="25px" width="auto" aria-hidden="true"> Location</a></li>
+                <li role="presentation" class="hidden-xs"><a class="btn btn-default"><img src="images/Icon-Phone.png" height="25px" width="auto" aria-hidden="true"> +60 05 4911562</a></li>
+            </ul>
+        </div>
+        <!-- Aloha Cameron Main Body-->
+        <div class="container alohaCameron">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>Cluny Lodge, the main cottage of Aloha Cameron, offers 8 rooms to guests who wish to experience a getaway in the year long cooling weather of Cameron Highlands. Located at about 1500 metres above sea-level, the temperature remains at the lower 20 ˚C most of the time.</p>
+                    <p>Cameron Highlands is the smallest district in Pahang which is located in the north-western corner of the state. Cluny Lodge is near the highest point and has quite a good view of Brinchang Town and greeneryies. This highland paradise still retains much of the charm of an English village. Although massive development in the last decade has changed the landscape of the highlands, it remains a popular destination. </p>
+                    <p>You could find an abundance of vegetables and fruits farms at the highlands. Cameron Highlands is also the leading producer of flowers and tea in Malaysia. View the lovely sight of tea plantations and beautiful flowers that you won’t see flourishing elsewhere in Singapore and Malaysia.</p>
+                </div>
+            </div>
+            <!-- Accommodation Section -->
+            <div class="panel-group" id="cluny-lodge" role="tablist" aria-multiselectable="true">
+                <h1><img src="images/Icon-Boot.png" height="40px" width="auto" aria-hidden="true"> Accommodation</h1>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+                        <h4 class="panel-title">
+                            <span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Cluny Lodge
+                        </h4>
+                    </div>
+                    <div class="panel-body">
+                        <!-- Carousel for Cameron Cluny Lodge -->
+                        <div id="cameron-cluny-lodge" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#cameron-cluny-lodge" data-slide-to="0" class="active"></li>
+                                <li data-target="#cameron-cluny-lodge" data-slide-to="1"></li>
+                                <li data-target="#cameron-cluny-lodge" data-slide-to="2"></li>
+                            </ol>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="images/Cameron_ClunyLodge1.jpg" width="100%" height="auto" alt="...">
+                                </div>
+                                <div class="item">
+                                    <img src="images/Cameron_ClunyLodge2.jpg" width="100%" height="auto" alt="...">
+                                </div>
+                                <div class="item">
+                                    <img src="images/Cameron_ClunyLodge3.jpg" width="100%" height="auto" alt="...">
+                                </div>
+                            </div>
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#cameron-cluny-lodge" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#cameron-cluny-lodge" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        <div class="col-sm-9">
+                            <ul class="list-unstyled">
+                                <li><img src="images/Icon-Electric-Pot.png" height="25px" width="auto" aria-hidden="true"> Electric Air-pot provided</li>
+                                <li><img src="images/Icon-Teacup.png" height="25px" width="auto" aria-hidden="true"> Teacups provided</li>
+                                <li><img src="images/Icon-Towel.png" height="25px" width="auto" aria-hidden="true"> Towels provided</li>
+                                <li><img src="images/Icon-Reading.png" height="25px" width="auto" aria-hidden="true"> 2 Common Reading Lounges</li>
+                                <li><img src="images/Icon-Living-Room.png" height="25px" width="auto" aria-hidden="true"> 2 Common Living Rooms</li>
+                                <li><img src="images/Icon-Dining-Room.png" height="25px" width="auto" aria-hidden="true"> Common Dining Room</li>
+                                <li><img src="images/Icon-Poker-Cards.png" height="25px" width="auto" aria-hidden="true"> Games Room</li>
+                                <li><img src="images/Icon-Playground.png" height="25px" width="auto" aria-hidden="true"> Children's Playground</li>
+                                <li><img src="images/Icon-Sleeping-Bed.png" height="25px" width="auto" aria-hidden="true"> 8 Rooms available for individual booking</li>
+                                <li>
+                                    <ul class="list-unstyled list-inline" id="capacity">
+                                        <img src="images/Icon-Cabin.png" height="25px" width="auto" aria-hidden="true">
+                                        <li>Capacity per Room</li>
+                                        <li>-</li>
+                                        <li>Day: <i class="fa fa-user-times fa-lg"></i> 3</li>
+                                        <li> Night: <i class="fa fa-user-times fa-lg"></i> 3</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p>It is a double-storey cottage with eight bedrooms, a common living room, a common dining room, a games room and a reading lounge. While staying in Cluny Lodge, you could request our friendly staff to prepare delicious meal to your preferences. Our caretaker provide personalised service and could assist to meet your needs.</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <h2>GARDEN<br>VIEW</h2>
+                            <div class="price-tag">
+                                <ul class="list-unstyled">
+                                    <li><img src="images/Icon-Price-Tag.png" height="60px" width="auto" aria-hidden="true"></li>
+                                    <li><span>FROM</span><br> S$75*</li>
+                                </ul>
+                                <a class="btn btn-default btn-lg" href="#" role="button">BOOK NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of Accomodation section -->
+            <a class="circle-arrow-up" href="#"><span class="glyphicon glyphicon-circle-arrow-up"></span></a>
+            <!-- Location Section -->
+            <div class="row" id="resort-location">
+                <div class="col-xs-12">
+                    <h1><img src="images/Icon-Boot.png" height="40px" width="auto" aria-hidden="true"> Location</h1>
+                    <div class="col-sm-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.5773899718706!2d101.38289061476152!3d4.48930779673793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31ca5835aea1ca69%3A0x53960d2ead710a97!2sCluny+Lodge!5e0!3m2!1sen!2ssg!4v1502900145572" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3>Getting Here</h3>
+                        <h4>By Car</h4>
+                        <h6><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Simpang Pulai - CH Route A181</h6>
+                        <p>This is the easiest and most comfortable route. Highly recommended for families with young children. From the North South Expressway, take Exit 137 (Simpang Pulai), turn right at the traffic light after you have paid your highway tolls. Turn right again at the next traffic light about 200 meters away into route A181 to Cameron Highlands. After about 1 hour going uphill, you will reach a T-junction. Turn right at this junction into Kampung Raja, follow the signs saying Brinchang and Tanah Rata.</p>
+                        <h6><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Tapah - Cameron Highlands Federal Route 59</h6>
+                        <p>Also known as the OLD road. Most visitors coming from the south will take this route, but many locals prefer to drive further north to Simpang Pulai to take the more comfortable route. From the North South Expressway, take Exit 132 (Tapah). Once you have paid the highway toll, turn left at the traffic lights and this long and winding road leads you up to Ringlet - Tanah Rata- Brinchang.You will need about 1.5 hours on this old road from Tapah to Tanah Rata, especially if you are stuck behind a very slow heavy vehicle.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of Location Section -->
+            <a class="circle-arrow-up" href="#"><span class="glyphicon glyphicon-circle-arrow-up"></span></a>
+        </div> <!-- Aloha Cameron Main Body end div-->
+        <footer class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h5>Disclaimer:</h5>
+                        <p>Purpose of this website is for CA3 Assignment Submission only</p>
+                        <p>For the purpose of this assignment, all photographic images used in this website are downloaded from www.aloharesorts.com.sg</p>
+                        <p>Credits to be given to www.icons8.com for all the free icons used in this website</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5>Navigation:</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Regulations &amp; Information</a></li>
+                            <li><a href="#">Privacy Statement</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5>Updates:</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">What's Happening</a></li>
+                            <li><a href="#">Upcoming Events</a></li>
+                            <li><a href="#">Aloha News</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row" id="copyright">
+                    <div class="col-xs-12">
+                        <h5>Copyright &copy; 2017 All Rights Reserved. Aloha Resorts.</h5>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+	    <!-- Custom JS -->
+	    <script src="includes/js/script.js"></script>
+	</body>
+</html>

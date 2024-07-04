@@ -1,0 +1,468 @@
+/*
+   My Custom CSS
+   =============
+
+   Author:    Stephanie Ang
+   Completed: 20 Aug 2017
+   Notes:     Assignment 3
+*/
+
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+.alohaLoyang, .alohaChangi, .alohaFraser, .alohaCameron {
+    margin: 50px auto;
+    font-family: Helvetica, sans-serif;
+}
+h1 {
+    font-family: Courgette, cursive;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+.circle-arrow-up span {
+    font-size: 35px;
+    color: #b2b2b2;
+    margin: 20px 0 0 20px;
+}
+.img-with-border {
+    border: 1px solid #b2b2b2;
+}
+#capacity li {
+    margin-right: 10px;
+}
+#capacity i {
+    color: #b2b2b2;
+}
+
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+.navbar {
+    background-color: white;
+    margin-bottom: 0;
+}
+.navbar-brand {
+    padding: 0;
+}
+.navbar-brand img {
+    height: 50px;
+    width: auto;
+   }
+.navbar-default .navbar-nav li a {
+   color: black;
+   font-weight: bold;
+   font-family: Courgette, cursive;
+   text-align: center;
+}
+.navbar-default .navbar-nav span {
+   color: #ff5a00;
+}
+.navbar-default .navbar-nav .active a {
+    background-color: #d9e409;
+    border-radius: 10px;
+}
+#social-media-icon-top {
+   display: none;
+}
+
+/* Social Media & Phone Icons only visible on small mobile devices */
+
+.visible-xs h1 {
+    margin-bottom: 20px;
+}
+.visible-xs h1 span {
+    color: #ff5a00;
+}
+.mobile-icons-header {
+    margin: 0;
+    padding: 10px 0 10px;
+    border-top: 1px solid #b2b2b2;
+    border-bottom: 1px solid #b2b2b2;
+}
+.mobile-icons-header-homepage {
+    margin: 0;
+    padding: 10px 0 10px;
+    border-bottom: 1px solid #b2b2b2;
+}
+.mobile-icons-header li, .mobile-icons-header-homepage li  {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+
+/* --------------------------------------
+   Chalet Booking Panel
+   -------------------------------------- */
+#booking-panel {
+    background-color: #d9e409;
+    padding: 10px 0 10px 0;
+    color: #006a44;
+}
+.form-inline button {
+    background-color: #d9e409;
+    border: none;
+    color: #006a44;
+}
+.form-inline span {
+    font-size: 25px;
+}
+
+/* --------------------------------------
+   Page Navigation Panel with Icons
+   -------------------------------------- */
+.nav-pills a {
+    margin: 10px 10px 0 0;
+    font-family: Courgette, cursive;
+    color: #777;
+}
+
+/* --------------------------------------
+   Homepage
+   -------------------------------------- */
+.Homepage h1 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: black;
+}
+.Homepage span {
+    color: #ff5a00;
+}
+.Homepage h2 {
+    margin-bottom: 20px;
+    font-family: Courgette, cursive;
+    color: #777;
+}
+.Homepage h4 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #006a44;
+}
+.Homepage p {
+    font-size: 18px;
+    color: black;
+}
+.Homepage a {
+    position: relative;
+    top: 80px;
+    right: 5px;
+}
+.Homepage .col-xs-1 img {
+    height: 70px;
+    width: auto;
+}
+#home-sub-image img {
+    border-top: 5px solid white;
+}
+#Homepage-Changi {
+    margin-top: 50px;
+}
+#Homepage-Loyang, #Homepage-Cameron {
+    margin-top: 70px;
+}
+#Homepage-Fraser {
+    margin-top: 60px;
+    margin-bottom: 70px;
+}
+
+/* --------------------------------------
+   Accordion (Accomodation Section)
+   -------------------------------------- */
+#accordion, #cluny-lodge {
+    margin-top: 50px;
+}
+#accordion li, #cluny-lodge li {
+    padding-bottom: 5px;
+}
+#accordion img, #cluny-lodge img, .carousel {
+    margin-bottom: 20px;
+}
+#accordion h2, #cluny-lodge h2 {
+    font-family: Courgette, cursive;
+    color: #777;
+    text-align: center;
+    float: left;
+}
+#accordion h4, #cluny-lodge h4 {
+    font-weight: bold;
+    color: #006a44;
+}
+#accordion .panel-heading, #cluny-lodge .panel-heading {
+    background-color: #d9e409;
+}
+.price-tag {
+    margin-top: 10px;
+    text-align: center;
+    float: right;
+}
+.price-tag li {
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+}
+.price-tag li span {
+    font-size: 20px;
+    font-weight: bold;
+}
+.price-tag img {
+    vertical-align: bottom;
+}
+.price-tag a {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #d9e409;
+}
+#arrow-menu-up span {
+    color: #b2b2b2;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+
+/* --------------------------------------
+  Modal Form & Validation
+  -------------------------------------- */
+.feedback-preview .col-sm-3 p {
+    margin-left: 15px;
+    font-weight: bold;
+}
+.feedback-preview .col-sm-9 p {
+    margin-left: 15px;
+}
+.feedback-preview, .submitbutton {
+    display: none;
+}
+.show {
+    display: block;
+}
+
+/* --------------------------------------
+   Facilities Section
+   -------------------------------------- */
+#resort-facilities {
+    margin-bottom: 40px;
+}
+#facilities {
+    margin-top: 50px;
+}
+#facilities h4 {
+    font-family: Courgette, cursive;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+/* --------------------------------------
+   Resort Map, Location & Shuttlebus Section
+   -------------------------------------- */
+#resort-map {
+    margin-top: 50px;
+}
+#resort-location {
+    margin-top: 50px;
+}
+#shuttle-bus {
+    margin-top: 50px;
+}
+.alohaFraser h6, .alohaCameron h6 {
+    font-size: 15px;
+    text-decoration: underline;
+    margin-top: 20px;
+}
+
+/* --------------------------------------
+   Footer
+   -------------------------------------- */
+footer {
+    background-color: #ffd600;
+}
+footer h5 {
+    color: black;
+    font-weight: bold;
+}
+footer p, footer a {
+    color: #3F3075;
+}
+#copyright {
+    text-align: center;
+}
+#resort-location h3 {
+    margin: 20px 0 20px 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+#resort-location h4 {
+    margin: 25px 0 25px 5px;
+    font-weight: bold;
+}
+#resort-location p {
+    margin-left: 5px;
+}
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    /*  Navigation Bar & Logo  */
+    .navbar {
+        margin-top: 10px;
+        border-top: none;
+    }
+    .navbar-brand img {
+        height: 80px;
+        width: auto;
+        margin-right: 25px;
+    }
+   .navbar-default .navbar-nav li a {
+        margin: 6px 25px;
+        font-size: 20px;
+        line-height: 25px;
+        display: inline-block;
+    }
+    /* Chalet Booking Panel */
+    .form-inline div {
+        margin-right: 40px;
+    }
+    /* Social Media Icons on top */
+    .mobile-icons-header {
+        padding: 10px 0 0 0;
+        border-top: none;
+        border-bottom: none;
+    }
+    /* Homepage */
+    .Homepage h1 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+    .Homepage h2 {
+        font-size: 26px;
+    }
+    .Homepage h4 {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    .Homepage p {
+        line-height: 20px;
+        font-size: 15px;
+    }
+    .Homepage a {
+        top: 80px;
+        right: 20px;
+    }
+    .Homepage .col-xs-1 img {
+        height: 55px;
+        width: auto;
+    }
+    #Homepage-Changi {
+        margin-top: 20px;
+    }
+    /* Accordion */
+    #accordion h2 {
+        float: none;
+    }
+    .price-tag {
+        margin-top: 80px;
+        float: none;
+    }
+    .circle-arrow-up span {
+        font-size: 50px;
+        margin: 30px 0 0 20px;
+    }
+    #resort-location h3 {
+        margin-top: 10px;
+    }
+    #resort-location iframe {
+        width: 100%;
+        height: 450px;
+    }
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    /*  Navigation Bar & Logo  */
+    .navbar {
+        border-top: none;
+    }
+    .navbar-brand img {
+        height: 100px;
+        width: auto;
+        margin-right: 40px;
+    }
+   .navbar-default .navbar-nav li a {
+        font-size: 24px;
+        line-height: 30px;
+        margin: 6px 30px;
+    }
+    /* Social Media Icons on top */
+    #social-media-icon-top {
+        display: block;
+    }
+    #social-media-icon-top ul {
+        list-style-type: none;
+    }
+    #social-media-icon-top li {
+        padding: 10px 0 0 25px;
+    }
+    /* Chalet Booking Panel */
+    .form-inline div {
+        margin-right: 30px;
+    }
+    /* Homepage */
+    .Homepage h1 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-size: 32px;
+    }
+    .Homepage h2 {
+        font-size: 30px;
+    }
+    .Homepage h4 {
+        margin-bottom: 20px;
+    }
+    .Homepage p {
+        font-size: 18px;
+    }
+    .Homepage a {
+        top: 100px;
+        right: 20px;
+    }
+    .Homepage .col-xs-1 img {
+        height: 70px;
+        width: auto;
+    }
+    #Homepage-Changi {
+        margin-top: 50px;
+    }
+    /* Accordion */
+    .price-tag {
+        margin-top: 140px;
+    }
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .navbar-default .navbar-nav li a {
+         margin: 6px 55px;
+     }
+     .form-inline div {
+        margin-right: 80px;
+     }
+     .Homepage h1 {
+     margin-top: 60px;
+    }
+    .Homepage .col-xs-1 img {
+        height: 90px;
+        width: auto;
+    }

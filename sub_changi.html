@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<!--
+    		Author: 	Stephanie Ang
+    		Completed:  20 Aug 2017
+    		Notes: 		Assignment 3
+    	-->
+    	<title>aloha...your place to relax &amp; enjoy</title>
+    	<!-- Bootstrap CSS -->
+    	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Custom CSS -->
+    	<link href="includes/css/styles.css" rel="stylesheet">
+		<!-- Font Awesome CSS -->
+    	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+        <link rel="shortcut icon" href="images/favicon.png">
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+        <link rel="icon" sizes="192x192" href="images/android.png">
+ 	</head>
+ 	<body>
+        <!-- Social Media Icons on top -->
+        <div class="container" id="social-media-icon-top">
+           <ul class="navbar-nav navbar-right">
+                <li><a href="https://www.facebook.com/pages/Aloha-Loyang-Seaview-Bungalow/203583413002008" target="_blank"><img src="images/Icon-Facebook.png" width="25px" height="auto"></a></li>
+                <li><a href="#modial-contact-us" role="button" data-toggle="modal"><img src="images/Icon-Message.png" width="25px" height="auto"></a></li>
+            </ul>
+        </div>
+        <!-- Navigation Bar & Logo -->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/Logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#"><span>aloha</span><br>Changi</a></li>
+                        <li><a href="sub_loyang.html"><span>aloha</span><br>Loyang</a></li>
+                        <li><a href="sub_cameron.html"><span>aloha</span><br>Cameron</a></li>
+                        <li><a href="sub_fraser.html"><span>aloha</span><br>Fraser</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Chalet Booking Panel (Visible on tablets, 768px and up) -->
+        <div class="container-fluid hidden-xs" id="booking-panel">
+            <div class="container">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="ResortName">Book your getaway</label>
+                        <br class="visible-sm">
+                        <select class="form-control">
+                            <option></option>
+                            <option>aloha Changi</option>
+                            <option>aloha Loyang</option>
+                            <option>aloha Cameron</option>
+                            <option>aloha Fraser</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Check-in">Check-In:</label>
+                        <br class="visible-sm">
+                        <input type="date" class="form-control" id="Check-In">
+                    </div>
+                    <div class="form-group">
+                        <label for="Check-in">Check-Out:</label>
+                        <br class="visible-sm">
+                        <input type="date" class="form-control" id="Check-Out">
+                    </div>
+                    <button type="submit" class="btn btn-default btn-lg">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!-- Social Media & Phone Icons (Visible on small mobile devices) -->
+        <div class="container-fluid visible-xs">
+            <h1><span>aloha</span> Changi</h1>
+            <ul class="list-unstyled mobile-icons-header">
+                <li><a href="https://www.facebook.com/pages/Aloha-Loyang-Seaview-Bungalow/203583413002008" target="_blank"><img src="images/Icon-Facebook.png" height="50px" width="auto"></a></li>
+                <li><a href="#modial-contact-us" role="button" data-toggle="modal"><img src="images/Icon-Message.png" width="50px" height="auto"></a></li>
+                <li><a href="#"><img src="images/Icon-Phone.png" height="50px" width="auto"></a></li>
+            </ul>
+        </div>
+        <!-- Social Media & Phone Icons (Visible on tablets, 768px and up) -->
+        <div class="container visible-sm">
+            <ul class="list-unstyled mobile-icons-header">
+                <li><a href="https://www.facebook.com/pages/Aloha-Loyang-Seaview-Bungalow/203583413002008" target="_blank"><img src="images/Icon-Facebook.png" height="35px" width="auto"></a></li>
+                <li><a href="#modial-contact-us" role="button" data-toggle="modal"><img src="images/Icon-Message.png" width="35px" height="auto"></a></li>
+            </ul>
+        </div>
+        <!-- Contact Us Form in a "Mondial Window" -->
+        <div class="modal fade" id="modial-contact-us" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Contact Us</h4>
+                    </div>
+                    <div class="modal-body">
+                         <form class="contact-form" action="results.html">
+                            <fieldset class="contactinfo">
+                               <label for="nameinput" class="control-label">
+                                  Name
+                                  <input class="form-control" type="text" name="name" id="nameinput" placeholder="First & Last Name" required>
+                               </label><br>
+                               <label for="emailinput" class="control-label">
+                                  Email
+                                  <input class="form-control" type="email" name="email" id="emailinput" placeholder="address@example.com" required>
+                               </label><br>
+                               <label for="phoneinput" class="control-label">
+                                    Phone
+                                    <input class="form-control" type="tel" name="phone" id="phoneinput" placeholder="+65-12345678" required>
+                               </label><br>
+                            </fieldset>
+                            <fieldset class="additionalinfo">
+                               <label for="other-info" class="control-label">
+                                  Message<br>
+                                  <textarea class="form-control" name="other-info" id="other-info" rows="5" cols="50" required></textarea>
+                               </label>
+                            </fieldset>
+                            <fieldset class="submitbutton">
+                                <button type="submit" class="btn btn-info">Send</button>
+                            </fieldset>
+                         </form>
+                    </div>
+                    <hr>
+                    <div class="feedback-preview">
+                        <div class="row">
+                           <div class="col-sm-3">
+                              <p>To: </p>
+                           </div>
+                           <div class="col-sm-9">
+                              <p>Aloha Loyang &amp; Resorts Headquarters</p>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-sm-3">
+                              <p>From:</p>
+                           </div>
+                           <div class="col-sm-9">
+                              <p class="feedback-from"></p>
+                           </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p>Email:</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="feedback-email"></p>
+                           </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p>Phone:</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="feedback-phone"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p>Message:</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="feedback-content"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end of Contact Us Form in a "Mondial Window" -->
+        <!-- Page Navigation Panel with Button Icons -->
+        <div class="container">
+            <ul class="nav nav-pills">
+                <li role="presentation"><a class="btn btn-default" href="#accordion"><img src="images/Icon-Bed.png" height="25px" width="auto" aria-hidden="true"> Accommodation</a></li>
+                <li role="presentation"><a class="btn btn-default" href="#resort-map"><img src="images/Icon-Map-Marker.png" height="25px" width="auto" aria-hidden="true"> Resort Map</a></li>
+                <li role="presentation"><a class="btn btn-default" href="#resort-location"><img src="images/Icon-Google-Map.png" height="25px" width="auto" aria-hidden="true"> Location</a></li>
+                <li role="presentation"><a class="btn btn-default" href="#shuttle-bus"><img src="images/Icon-Bus.png" height="25px" width="auto" aria-hidden="true"> Shuttle Bus</a></li>
+                <li role="presentation" class="hidden-xs"><a class="btn btn-default"><img src="images/Icon-Phone.png" height="25px" width="auto" aria-hidden="true"> +65 6545 2343</a></li>
+            </ul>
+        </div>
+        <!-- Aloha Changi Main Body-->
+        <div class="container alohaChangi">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>Located in the east, Aloha Changi is a popular choice holiday destination for Singaporeans looking for a quick getaway and offers guests a home away from home.</p>
+                    <p>With 49 bungalows and terraces ranging from 1 to 6 bedrooms, each chalet is uniquely designed to provide maximum comfort for the guests.</p>
+                    <p>Taking a walk along Changi Beach and enjoy the sea breeze. For those feeling adventurous, there are a variety of activities available such as cycling or taking a ferry to Pulau Ubin. Learn more about our sunny island Singapore by registering for the Heritage Tours. There is never a dull moment at Aloha Changi.</p>
+                </div>
+            </div>
+            <!-- Accommodation Section using Accordion -->
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <h1><img src="images/Icon-Flip-Flops.png" height="40px" width="auto" aria-hidden="true"> Accomodation</h1>
+                <div class="panel panel-default"> <!-- start of 1st Accordion for Garden Bungalows -->
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Changi Cottage (3 Bedroom) <span class="glyphicon glyphicon-menu-down"></span></a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            <!-- Carousel for Changi Cottage -->
+                            <div id="changi-cottage" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#changi-cottage" data-slide-to="0" class="active"></li>
+                                    <li data-target="#changi-cottage" data-slide-to="1"></li>
+                                    <li data-target="#changi-cottage" data-slide-to="2"></li>
+                                    <li data-target="#changi-cottage" data-slide-to="3"></li>
+                                    <li data-target="#changi-cottage" data-slide-to="4"></li>
+                                    <li data-target="#changi-cottage" data-slide-to="5"></li>
+                                    <li data-target="#changi-cottage" data-slide-to="6"></li>
+                                </ol>
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <img src="images/Changi_ChangiCottage1.jpg" width="100%" height="auto" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/Changi_ChangiCottage2.jpg" width="100%" height="auto" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/Changi_ChangiCottage3.jpg" width="100%" height="auto" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/Changi_ChangiCottage4.jpg" width="100%" height="auto" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/Changi_ChangiCottage5.jpg" width="100%" height="auto" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/Changi_ChangiCottage6.jpg" width="100%" height="auto" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/Changi_ChangiCottage7.jpg" width="100%" height="auto" alt="...">
+                                    </div>
+                                </div>
+                                <!-- Controls -->
+                                <a class="left carousel-control" href="#changi-cottage" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#changi-cottage" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            <div class="col-sm-9">
+                                <ul class="list-unstyled">
+                                    <li><img src="images/Icon-Living-Room.png" height="25px" width="auto" aria-hidden="true"> Living room set with TV and games table</li>
+                                    <li><img src="images/Icon-Dining-Room.png" height="25px" width="auto" aria-hidden="true"> Dining room</li>
+                                    <li><img src="images/Icon-Shower.png" height="25px" width="auto" aria-hidden="true"> Bathrooms with heated shower</li>
+                                    <li><img src="images/Icon-BBQ.png" height="25px" width="auto" aria-hidden="true"> Sheltered BBQ Pit</li>
+                                    <li><img src="images/Icon-Cooker.png" height="25px" width="auto" aria-hidden="true"> Fully equipped kitchen</li>
+                                    <li><img src="images/Icon-Sleeping-Bed.png" height="25px" width="auto" aria-hidden="true"> 3 Air-conditioned bedrooms with wall/ceiling fan</li>
+                                    <li>
+                                        <ul class="list-unstyled list-inline" id="capacity">
+                                            <img src="images/Icon-Cabin.png" height="25px" width="auto" aria-hidden="true">
+                                            <li>Capacity</li>
+                                            <li>-</li>
+                                            <li>Day: <i class="fa fa-user-times fa-lg"></i> 40</li>
+                                            <li> Night: <i class="fa fa-user-times fa-lg"></i> 6</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p>Experience an unforgettable and relaxing holiday amidst the peace and tranquillity in the natural surroundings.</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <h2>SEA<br>VIEW</h2>
+                                <div class="price-tag">
+                                    <ul class="list-unstyled">
+                                        <li><img src="images/Icon-Price-Tag.png" height="60px" width="auto" aria-hidden="true"></li>
+                                        <li><span>FROM</span><br> S$540*</li>
+                                    </ul>
+                                    <a class="btn btn-default btn-lg" href="#" role="button">BOOK NOW</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12" id="arrow-menu-up">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span class="glyphicon glyphicon-menu-up"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end of 1st Accordion -->
+                <div class="panel panel-default"> <!-- start of 2nd Accordion for Changi Garden Chalets (5 Bedroom) -->
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Changi Garden Chalets (5 Bedroom) <span class="glyphicon glyphicon-menu-down"></span></a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                            <img class="img-responsive center-block" src="images/Changi_ChangiGardenChalet.jpg" width="100%" height="auto" alt="...">
+                            <div class="col-sm-9">
+                                <ul class="list-unstyled">
+                                    <li><img src="images/Icon-Living-Room.png" height="25px" width="auto" aria-hidden="true"> Living room set with TV and games table</li>
+                                    <li><img src="images/Icon-Dining-Room.png" height="25px" width="auto" aria-hidden="true"> Dining room</li>
+                                    <li><img src="images/Icon-Shower.png" height="25px" width="auto" aria-hidden="true"> Bathrooms with heated shower</li>
+                                    <li><img src="images/Icon-BBQ.png" height="25px" width="auto" aria-hidden="true"> Sheltered BBQ Pit</li>
+                                    <li><img src="images/Icon-Cooker.png" height="25px" width="auto" aria-hidden="true"> Fully equipped kitchen</li>
+                                    <li><img src="images/Icon-Sleeping-Bed.png" height="25px" width="auto" aria-hidden="true"> 5 Air-conditioned bedrooms with wall/ceiling fan</li>
+                                    <li>
+                                        <ul class="list-unstyled list-inline" id="capacity">
+                                            <img src="images/Icon-Cabin.png" height="25px" width="auto" aria-hidden="true">
+                                            <li>Capacity</li>
+                                            <li>-</li>
+                                            <li>Day: <i class="fa fa-user-times fa-lg"></i> 40</li>
+                                            <li> Night: <i class="fa fa-user-times fa-lg"></i> 10</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p>Enjoy social gatherings such as BBQ parties with families and friends in the spacious Changi Garden Chalets!</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <h2>GARDEN<br>VIEW</h2>
+                                <div class="price-tag">
+                                    <ul class="list-unstyled">
+                                        <li><img src="images/Icon-Price-Tag.png" height="60px" width="auto" aria-hidden="true"></li>
+                                        <li><span>FROM</span><br> S$210*</li>
+                                    </ul>
+                                    <a class="btn btn-default btn-lg" href="#" role="button">BOOK NOW</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12" id="arrow-menu-up">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><span class="glyphicon glyphicon-menu-up"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end of 2nd Accordion -->
+                <div class="panel panel-default"> <!-- start of 3rd Accordion for Changi Seafront Chalets (4 Bedroom) -->
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Changi Seafront Chalets (4 Bedroom) <span class="glyphicon glyphicon-menu-down"></span></a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                            <img class="img-responsive center-block" src="images/Changi_ChangiSeafrontChalet2.jpg" width="100%" height="auto" alt="...">
+                            <div class="col-sm-9">
+                                <ul class="list-unstyled">
+                                    <li><img src="images/Icon-Living-Room.png" height="25px" width="auto" aria-hidden="true"> Living room set with TV and games table</li>
+                                    <li><img src="images/Icon-Dining-Room.png" height="25px" width="auto" aria-hidden="true"> Dining room</li>
+                                    <li><img src="images/Icon-Shower.png" height="25px" width="auto" aria-hidden="true"> Bathrooms with heated shower</li>
+                                    <li><img src="images/Icon-BBQ.png" height="25px" width="auto" aria-hidden="true"> Sheltered BBQ Pit</li>
+                                    <li><img src="images/Icon-Cooker.png" height="25px" width="auto" aria-hidden="true"> Fully equipped kitchen</li>
+                                    <li><img src="images/Icon-Sleeping-Bed.png" height="25px" width="auto" aria-hidden="true"> 4 Air-conditioned bedrooms with wall/ceiling fan</li>
+                                    <li>
+                                        <ul class="list-unstyled list-inline" id="capacity">
+                                            <img src="images/Icon-Cabin.png" height="25px" width="auto" aria-hidden="true">
+                                            <li>Capacity</li>
+                                            <li>-</li>
+                                            <li>Day: <i class="fa fa-user-times fa-lg"></i> 40</li>
+                                            <li> Night: <i class="fa fa-user-times fa-lg"></i> 8</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p>The Changi Seafront Chalets are equipped with amentities to make your stay enjoyable and comfortable.</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <h2>SEA<br>VIEW</h2>
+                                <div class="price-tag">
+                                    <ul class="list-unstyled">
+                                        <li><img src="images/Icon-Price-Tag.png" height="60px" width="auto" aria-hidden="true"></li>
+                                        <li><span>FROM</span><br> S$210*</li>
+                                    </ul>
+                                    <a class="btn btn-default btn-lg" href="#" role="button">BOOK NOW</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12" id="arrow-menu-up">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><span class="glyphicon glyphicon-menu-up"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end of 3rd Accordion -->
+                <div class="panel panel-default"> <!-- start of 4th Accordion for Fairy Point Bungalows (1 Bedroom) -->
+                    <div class="panel-heading" role="tab" id="headingFour">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Fairy Point Bungalows (1 Bedroom) <span class="glyphicon glyphicon-menu-down"></span></a>
+                        </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                        <div class="panel-body">
+                            <img class="img-responsive center-block" src="images/Changi_FairyPointBungalow1Bed.jpg" width="100%" height="auto" alt="...">
+                            <div class="col-sm-9">
+                                <ul class="list-unstyled">
+                                    <li><img src="images/Icon-Living-Room.png" height="25px" width="auto" aria-hidden="true"> Living room with TV</li>
+                                    <li><img src="images/Icon-Dining-Room.png" height="25px" width="auto" aria-hidden="true"> Dining room</li>
+                                    <li><img src="images/Icon-Shower.png" height="25px" width="auto" aria-hidden="true"> Bathrooms with heated shower</li>
+                                    <li><img src="images/Icon-BBQ.png" height="25px" width="auto" aria-hidden="true"> Sheltered BBQ Pit</li>
+                                    <li><img src="images/Icon-Cooker.png" height="25px" width="auto" aria-hidden="true"> Fully equipped kitchen</li>
+                                    <li><img src="images/Icon-Sleeping-Bed.png" height="25px" width="auto" aria-hidden="true"> 1 Air-conditioned bedroom with ceiling fan</li>
+                                    <li>
+                                        <ul class="list-unstyled list-inline" id="capacity">
+                                            <img src="images/Icon-Cabin.png" height="25px" width="auto" aria-hidden="true">
+                                            <li>Capacity</li>
+                                            <li>-</li>
+                                            <li>Day: <i class="fa fa-user-times fa-lg"></i> 10</li>
+                                            <li> Night: <i class="fa fa-user-times fa-lg"></i> 2</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p>Relax and enjoy a BBQ session amidst the tranquility of nature!</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <h2>GARDEN<br>VIEW</h2>
+                                <div class="price-tag">
+                                    <ul class="list-unstyled">
+                                        <li><img src="images/Icon-Price-Tag.png" height="60px" width="auto" aria-hidden="true"></li>
+                                        <li><span>FROM</span><br> S$140*</li>
+                                    </ul>
+                                    <a class="btn btn-default btn-lg" href="#" role="button">BOOK NOW</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12" id="arrow-menu-up">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><span class="glyphicon glyphicon-menu-up"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end of 4th Accordion -->
+                <div class="panel panel-default"> <!-- start of 5th Accordion for Fairy Point Bungalows (3 Bedroom) -->
+                    <div class="panel-heading" role="tab" id="headingFive">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Fairy Point Bungalows (3 Bedroom) <span class="glyphicon glyphicon-menu-down"></span></a>
+                        </h4>
+                    </div>
+                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                        <div class="panel-body">
+                            <img class="img-responsive center-block" src="images/Changi_FairyPointBungalow3Bed.jpg" width="100%" height="auto" alt="...">
+                            <div class="col-sm-9">
+                                <ul class="list-unstyled">
+                                    <li><img src="images/Icon-Living-Room.png" height="25px" width="auto" aria-hidden="true"> Living room with TV</li>
+                                    <li><img src="images/Icon-Dining-Room.png" height="25px" width="auto" aria-hidden="true"> Dining room</li>
+                                    <li><img src="images/Icon-Shower.png" height="25px" width="auto" aria-hidden="true"> Bathrooms with heated shower</li>
+                                    <li><img src="images/Icon-BBQ.png" height="25px" width="auto" aria-hidden="true"> Sheltered BBQ Pit</li>
+                                    <li><img src="images/Icon-Cooker.png" height="25px" width="auto" aria-hidden="true"> Fully equipped kitchen</li>
+                                    <li><img src="images/Icon-Sleeping-Bed.png" height="25px" width="auto" aria-hidden="true"> 3 Air-conditioned bedrooms with ceiling fan</li>
+                                    <li>
+                                        <ul class="list-unstyled list-inline" id="capacity">
+                                            <img src="images/Icon-Cabin.png" height="25px" width="auto" aria-hidden="true">
+                                            <li>Capacity</li>
+                                            <li>-</li>
+                                            <li>Day: <i class="fa fa-user-times fa-lg"></i> 16</li>
+                                            <li> Night: <i class="fa fa-user-times fa-lg"></i> 6</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p>Take advantage of the serenity of surroundings and plan a get-together with your loved ones.</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <h2>GARDEN<br>VIEW</h2>
+                                <div class="price-tag">
+                                    <ul class="list-unstyled">
+                                        <li><img src="images/Icon-Price-Tag.png" height="60px" width="auto" aria-hidden="true"></li>
+                                        <li><span>FROM</span><br> S$205*</li>
+                                    </ul>
+                                    <a class="btn btn-default btn-lg" href="#" role="button">BOOK NOW</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12" id="arrow-menu-up">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive"><span class="glyphicon glyphicon-menu-up"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end of 5th Accordion -->
+               <div class="panel panel-default"> <!-- start of 6th Accordion for Fairy Point Bungalows (4 Bedroom) -->
+                    <div class="panel-heading" role="tab" id="headingSix">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Fairy Point Bungalows (4 Bedroom) <span class="glyphicon glyphicon-menu-down"></span></a>
+                        </h4>
+                    </div>
+                    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                        <div class="panel-body">
+                            <!-- Carousel for Fairy Point Bungalows (4 Bedroom) -->
+                            <div id="changi-fairypoint" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#changi-fairypoint" data-slide-to="0" class="active"></li>
+                                    <li data-target="#changi-fairypoint" data-slide-to="1"></li>
+                                    <li data-target="#changi-fairypoint" data-slide-to="2"></li>
+                                    <li data-target="#changi-fairypoint" data-slide-to="3"></li>
+                                    <li data-target="#changi-fairypoint" data-slide-to="4"></li>
+                                    <li data-target="#changi-fairypoint" data-slide-to="5"></li>
+                                    <li data-target="#changi-fairypoint" data-slide-to="6"></li>
+                                </ol>
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <img src="images/Changi_FairyPointBungalow4Bed_1.jpg" width="100%" height="auto" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/Changi_FairyPointBungalow4Bed_2.jpg" width="100%" height="auto" alt="...">
+                                    </div>
+                                    <div class="item ">
+                                        <img src="images/Changi_FairyPointBungalow4Bed_3.jpg" width="100%" height="auto" alt="...">
+                                    </div>
+                                    <div class="item ">
+                                        <img src="images/Changi_FairyPointBungalow4Bed_4.jpg" width="100%" height="auto" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/Changi_FairyPointBungalow4Bed_5.jpg" width="100%" height="auto" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/Changi_FairyPointBungalow4Bed_6.jpg" width="100%" height="auto" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/Changi_FairyPointBungalow4Bed_7.jpg" width="100%" height="auto" alt="...">
+                                    </div>
+                                </div>
+                                <!-- Controls -->
+                                <a class="left carousel-control" href="#changi-fairypoint" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#changi-fairypoint" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            <div class="col-sm-9">
+                                <ul class="list-unstyled">
+                                    <li><img src="images/Icon-Living-Room.png" height="25px" width="auto" aria-hidden="true"> Living room set with TV and games table</li>
+                                    <li><img src="images/Icon-Dining-Room.png" height="25px" width="auto" aria-hidden="true"> Dining room</li>
+                                    <li><img src="images/Icon-Shower.png" height="25px" width="auto" aria-hidden="true"> Bathrooms with heated shower</li>
+                                    <li><img src="images/Icon-BBQ.png" height="25px" width="auto" aria-hidden="true"> Sheltered BBQ Pit</li>
+                                    <li><img src="images/Icon-Cooker.png" height="25px" width="auto" aria-hidden="true"> Fully equipped kitchen</li>
+                                    <li><img src="images/Icon-Sleeping-Bed.png" height="25px" width="auto" aria-hidden="true"> 4 Air-conditioned bedrooms with wall/ceiling fan</li>
+                                    <li>
+                                        <ul class="list-unstyled list-inline" id="capacity">
+                                            <img src="images/Icon-Cabin.png" height="25px" width="auto" aria-hidden="true">
+                                            <li>Capacity</li>
+                                            <li>-</li>
+                                            <li>Day: <i class="fa fa-user-times fa-lg"></i> 25</li>
+                                            <li> Night: <i class="fa fa-user-times fa-lg"></i> 8</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p>Enjoy the tranquility of nature at Fairy Point Bungalows.</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <h2>GARDEN<br>VIEW</h2>
+                                <div class="price-tag">
+                                    <ul class="list-unstyled">
+                                        <li><img src="images/Icon-Price-Tag.png" height="60px" width="auto" aria-hidden="true"></li>
+                                        <li><span>FROM</span><br> S$155*</li>
+                                    </ul>
+                                    <a class="btn btn-default btn-lg" href="#" role="button">BOOK NOW</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12" id="arrow-menu-up">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix"><span class="glyphicon glyphicon-menu-up"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end of 6th Accordion -->
+                <div class="panel panel-default"> <!-- start of 7th Accordion for Fairy Point Chalet (4 Bedroom Hillside View) -->
+                    <div class="panel-heading" role="tab" id="headingSeven">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            <div class="hidden-xs">
+                            <span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Fairy Point Chalets (4 Bedroom Hillside View) <span class="glyphicon glyphicon-menu-down"></span>
+                            </div>
+                            <div class="visible-xs">
+                            <span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Fairy Point Chalets (4 BR Hillside View) <span class="glyphicon glyphicon-menu-down"></span>
+                            </div>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                        <div class="panel-body">
+                            <img class="img-responsive center-block" src="images/Changi_FairyPointChalet.jpg" width="100%" height="auto" alt="...">
+                            <div class="col-sm-9">
+                                <ul class="list-unstyled">
+                                    <li><img src="images/Icon-Living-Room.png" height="25px" width="auto" aria-hidden="true"> Living room set with TV and games table</li>
+                                    <li><img src="images/Icon-Dining-Room.png" height="25px" width="auto" aria-hidden="true"> Dining room</li>
+                                    <li><img src="images/Icon-Shower.png" height="25px" width="auto" aria-hidden="true"> Bathrooms with heated shower</li>
+                                    <li><img src="images/Icon-BBQ.png" height="25px" width="auto" aria-hidden="true"> Sheltered BBQ Pit</li>
+                                    <li><img src="images/Icon-Cooker.png" height="25px" width="auto" aria-hidden="true"> Fully equipped kitchen</li>
+                                    <li><img src="images/Icon-Sleeping-Bed.png" height="25px" width="auto" aria-hidden="true"> 4 Air-conditioned bedrooms with ceiling fan</li>
+                                    <li>
+                                        <ul class="list-unstyled list-inline" id="capacity">
+                                            <img src="images/Icon-Cabin.png" height="25px" width="auto" aria-hidden="true">
+                                            <li>Capacity</li>
+                                            <li>-</li>
+                                            <li>Day: <i class="fa fa-user-times fa-lg"></i> 40</li>
+                                            <li> Night: <i class="fa fa-user-times fa-lg"></i> 12</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p>Situated near the sea, these chalets are ideal for relaxation.</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <h2>HILLSIDE<br>VIEW</h2>
+                                <div class="price-tag">
+                                    <ul class="list-unstyled">
+                                        <li><img src="images/Icon-Price-Tag.png" height="60px" width="auto" aria-hidden="true"></li>
+                                        <li><span>FROM</span><br> S$330*</li>
+                                    </ul>
+                                    <a class="btn btn-default btn-lg" href="#" role="button">BOOK NOW</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12" id="arrow-menu-up">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"><span class="glyphicon glyphicon-menu-up"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end of 7th Accordion -->
+                <div class="panel panel-default"> <!-- start of 8th Accordion for Fairy Point Chalet (4 Bedroom Sea View) -->
+                    <div class="panel-heading" role="tab" id="headingEight">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                            <div class="hidden-xs">
+                            <span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Fairy Point Chalets (4 Bedroom Seaview) <span class="glyphicon glyphicon-menu-down"></span>
+                            </div>
+                            <div class="visible-xs">
+                            <span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Fairy Point Chalets (4 BR Seaview) <span class="glyphicon glyphicon-menu-down"></span>
+                            </div>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+                        <div class="panel-body">
+                            <img class="img-responsive center-block" src="images/Changi_FairyPointChalet4BedSeaview.png" width="100%" height="auto" alt="...">
+                            <div class="col-sm-9">
+                                <ul class="list-unstyled">
+                                    <li><img src="images/Icon-Living-Room.png" height="25px" width="auto" aria-hidden="true"> Living room set with TV and games table</li>
+                                    <li><img src="images/Icon-Dining-Room.png" height="25px" width="auto" aria-hidden="true"> Dining room</li>
+                                    <li><img src="images/Icon-Shower.png" height="25px" width="auto" aria-hidden="true"> Bathrooms with heated shower</li>
+                                    <li><img src="images/Icon-BBQ.png" height="25px" width="auto" aria-hidden="true"> BBQ Pit</li>
+                                    <li><img src="images/Icon-Cooker.png" height="25px" width="auto" aria-hidden="true"> Fully equipped kitchen</li>
+                                    <li><img src="images/Icon-Sleeping-Bed.png" height="25px" width="auto" aria-hidden="true"> 4 Air-conditioned bedrooms with wall/ceiling fan</li>
+                                    <li>
+                                        <ul class="list-unstyled list-inline" id="capacity">
+                                            <img src="images/Icon-Cabin.png" height="25px" width="auto" aria-hidden="true">
+                                            <li>Capacity</li>
+                                            <li>-</li>
+                                            <li>Day: <i class="fa fa-user-times fa-lg"></i> 50</li>
+                                            <li> Night: <i class="fa fa-user-times fa-lg"></i> 8</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p>Experience an unforgettable and relaxing holiday amidst the peace and tranquillity in the natural surroundings.</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <h2>SEA<br>VIEW</h2>
+                                <div class="price-tag">
+                                    <ul class="list-unstyled">
+                                        <li><img src="images/Icon-Price-Tag.png" height="60px" width="auto" aria-hidden="true"></li>
+                                        <li><span>FROM</span><br> S$540*</li>
+                                    </ul>
+                                    <a class="btn btn-default btn-lg" href="#" role="button">BOOK NOW</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12" id="arrow-menu-up">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight"><span class="glyphicon glyphicon-menu-up"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end of 8th Accordion -->
+                <div class="panel panel-default"> <!-- start of 9th Accordion for Fairy Point Chalet (6 Bedroom) -->
+                    <div class="panel-heading" role="tab" id="headingNine">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Fairy Point Chalets (6 Bedroom) <span class="glyphicon glyphicon-menu-down"></span></a>
+                        </h4>
+                    </div>
+                    <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+                        <div class="panel-body">
+                            <img class="img-responsive center-block" src="images/Changi_FairyPointChalet.jpg" width="100%" height="auto" alt="...">
+                            <div class="col-sm-9">
+                                <ul class="list-unstyled">
+                                    <li><img src="images/Icon-Living-Room.png" height="25px" width="auto" aria-hidden="true"> Living room set with TV and games table</li>
+                                    <li><img src="images/Icon-Dining-Room.png" height="25px" width="auto" aria-hidden="true"> Dining room</li>
+                                    <li><img src="images/Icon-Shower.png" height="25px" width="auto" aria-hidden="true"> Bathrooms with heated shower</li>
+                                    <li><img src="images/Icon-BBQ.png" height="25px" width="auto" aria-hidden="true"> Sheltered BBQ Pit</li>
+                                    <li><img src="images/Icon-Cooker.png" height="25px" width="auto" aria-hidden="true"> Fully equipped kitchen</li>
+                                    <li><img src="images/Icon-Sleeping-Bed.png" height="25px" width="auto" aria-hidden="true"> 6 Air-conditioned bedrooms with ceiling fan</li>
+                                    <li>
+                                        <ul class="list-unstyled list-inline" id="capacity">
+                                            <img src="images/Icon-Cabin.png" height="25px" width="auto" aria-hidden="true">
+                                            <li>Capacity</li>
+                                            <li>-</li>
+                                            <li>Day: <i class="fa fa-user-times fa-lg"></i> 40</li>
+                                            <li> Night: <i class="fa fa-user-times fa-lg"></i> 17</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p>Situated near the sea, these chalets are ideal for relaxation.</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <h2>HILLSIDE<br>VIEW</h2>
+                                <div class="price-tag">
+                                    <ul class="list-unstyled">
+                                        <li><img src="images/Icon-Price-Tag.png" height="60px" width="auto" aria-hidden="true"></li>
+                                        <li><span>FROM</span><br> S$330*</li>
+                                    </ul>
+                                    <a class="btn btn-default btn-lg" href="#" role="button">BOOK NOW</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12" id="arrow-menu-up">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine"><span class="glyphicon glyphicon-menu-up"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end of 9th Accordion -->
+                <div class="panel panel-default"> <!-- start of 10th Accordion for Large Fairy Point Chalet (5 Bedroom) -->
+                    <div class="panel-heading" role="tab" id="headingTen">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Large Fairy Point Chalets (5 Bedroom) <span class="glyphicon glyphicon-menu-down"></span></a>
+                        </h4>
+                    </div>
+                    <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
+                        <div class="panel-body">
+                            <img class="img-responsive center-block" src="images/Changi_LargeFairyPointChalet5Bed.jpg" width="100%" height="auto" alt="...">
+                            <div class="col-sm-9">
+                                <ul class="list-unstyled">
+                                    <li><img src="images/Icon-Living-Room.png" height="25px" width="auto" aria-hidden="true"> Living room set with TV and games table</li>
+                                    <li><img src="images/Icon-Dining-Room.png" height="25px" width="auto" aria-hidden="true"> Dining room</li>
+                                    <li><img src="images/Icon-Shower.png" height="25px" width="auto" aria-hidden="true"> Bathrooms with heated shower</li>
+                                    <li><img src="images/Icon-BBQ.png" height="25px" width="auto" aria-hidden="true"> BBQ Pit</li>
+                                    <li><img src="images/Icon-Cooker.png" height="25px" width="auto" aria-hidden="true"> Fully equipped kitchen</li>
+                                    <li><img src="images/Icon-Sleeping-Bed.png" height="25px" width="auto" aria-hidden="true"> 5 Air-conditioned bedrooms with wall/ceiling fan</li>
+                                    <li>
+                                        <ul class="list-unstyled list-inline" id="capacity">
+                                            <img src="images/Icon-Cabin.png" height="25px" width="auto" aria-hidden="true">
+                                            <li>Capacity</li>
+                                            <li>-</li>
+                                            <li>Day: <i class="fa fa-user-times fa-lg"></i> 50</li>
+                                            <li> Night: <i class="fa fa-user-times fa-lg"></i> 10</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p>Situated near the sea, these large double-storey chalets are ideal for relaxation and social gatherings with loved ones.</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <h2>GARDEN<br>VIEW</h2>
+                                <div class="price-tag">
+                                    <ul class="list-unstyled">
+                                        <li><img src="images/Icon-Price-Tag.png" height="60px" width="auto" aria-hidden="true"></li>
+                                        <li><span>FROM</span><br> S$420*</li>
+                                    </ul>
+                                    <a class="btn btn-default btn-lg" href="#" role="button">BOOK NOW</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12" id="arrow-menu-up">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen"><span class="glyphicon glyphicon-menu-up"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end of 10th Accordion -->
+                <div class="panel panel-default"> <!-- start of 11th Accordion for Fairy Point Seaview Chalet (5 Bedroom) -->
+                    <div class="panel-heading" role="tab" id="headingEleven">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Fairy Point Seaview Chalet (5 Bedroom) <span class="glyphicon glyphicon-menu-down"></span></a>
+                        </h4>
+                    </div>
+                    <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
+                        <div class="panel-body">
+                            <img class="img-responsive center-block" src="images/Changi_FairyPointSeaviewChalet.jpg" width="100%" height="auto" alt="...">
+                            <div class="col-sm-9">
+                                <ul class="list-unstyled">
+                                    <li><img src="images/Icon-Living-Room.png" height="25px" width="auto" aria-hidden="true"> Living room set with TV and games table</li>
+                                    <li><img src="images/Icon-Dining-Room.png" height="25px" width="auto" aria-hidden="true"> Dining room</li>
+                                    <li><img src="images/Icon-Shower.png" height="25px" width="auto" aria-hidden="true"> Bathrooms with heated shower</li>
+                                    <li><img src="images/Icon-BBQ.png" height="25px" width="auto" aria-hidden="true"> Sheltered BBQ Pit</li>
+                                    <li><img src="images/Icon-Cooker.png" height="25px" width="auto" aria-hidden="true"> Fully equipped kitchen</li>
+                                    <li><img src="images/Icon-Sleeping-Bed.png" height="25px" width="auto" aria-hidden="true"> 5 Air-conditioned bedrooms with ceiling fan</li>
+                                    <li>
+                                        <ul class="list-unstyled list-inline" id="capacity">
+                                            <img src="images/Icon-Cabin.png" height="25px" width="auto" aria-hidden="true">
+                                            <li>Capacity</li>
+                                            <li>-</li>
+                                            <li>Day: <i class="fa fa-user-times fa-lg"></i> 50</li>
+                                            <li> Night: <i class="fa fa-user-times fa-lg"></i> 15</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p>Indulge in leisurely rewarding holiday getaways at Fairy Point Seaview Chalet.</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <h2>SEA<br>VIEW</h2>
+                                <div class="price-tag">
+                                    <ul class="list-unstyled">
+                                        <li><img src="images/Icon-Price-Tag.png" height="60px" width="auto" aria-hidden="true"></li>
+                                        <li><span>FROM</span><br> S$420*</li>
+                                    </ul>
+                                    <a class="btn btn-default btn-lg" href="#" role="button">BOOK NOW</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12" id="arrow-menu-up">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven"><span class="glyphicon glyphicon-menu-up"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end of 11th Accordion -->
+               <div class="panel panel-default"> <!-- start of 12th Accordion for Netheravon Terraces With BBQ pit (1 Bedroom) -->
+                    <div class="panel-heading" role="tab" id="headingTwelve">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                            <div class="hidden-xs">
+                            <span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Netheravon Terraces With BBQ pit (1 Bedroom) <span class="glyphicon glyphicon-menu-down"></span>
+                            </div>
+                            <div class="visible-xs">
+                            <span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Netheravon Terraces w/ BBQ pit (1 BR) <span class="glyphicon glyphicon-menu-down"></span>
+                            </div>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwelve">
+                        <div class="panel-body">
+                            <!-- Carousel for Netheravon Terraces With BBQ pit (1 Bedroom) -->
+                            <div id="changi-netheravon-bbq" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#changi-netheravon-bbq" data-slide-to="0" class="active"></li>
+                                    <li data-target="#changi-netheravon-bbq" data-slide-to="1"></li>
+                                    <li data-target="#changi-netheravon-bbq" data-slide-to="2"></li>
+                                    <li data-target="#changi-netheravon-bbq" data-slide-to="3"></li>
+                                    <li data-target="#changi-netheravon-bbq" data-slide-to="4"></li>
+                               </ol>
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <img src="images/Changi_NetheravonTerraces1.jpg" width="100%" height="auto" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/Changi_NetheravonTerraces2.jpg" width="100%" height="auto" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/Changi_NetheravonTerraces3.jpg" width="100%" height="auto" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/Changi_NetheravonTerraces4.jpg" width="100%" height="auto" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/Changi_NetheravonTerraces5.jpg" width="100%" height="auto" alt="...">
+                                    </div>
+                                </div>
+                                <!-- Controls -->
+                                <a class="left carousel-control" href="#changi-netheravon-bbq" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#changi-netheravon-bbq" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            <div class="col-sm-9">
+                                <ul class="list-unstyled">
+                                    <li><img src="images/Icon-Living-Room.png" height="25px" width="auto" aria-hidden="true"> Living room set with TV</li>
+                                    <li><img src="images/Icon-Dining-Room.png" height="25px" width="auto" aria-hidden="true"> Dining area</li>
+                                    <li><img src="images/Icon-Shower.png" height="25px" width="auto" aria-hidden="true"> Bathrooms with heated shower</li>
+                                    <li><img src="images/Icon-BBQ.png" height="25px" width="auto" aria-hidden="true"> Sheltered BBQ Pit</li>
+                                    <li><img src="images/Icon-Cooker.png" height="25px" width="auto" aria-hidden="true"> Fully equipped kitchen</li>
+                                    <li><img src="images/Icon-Sleeping-Bed.png" height="25px" width="auto" aria-hidden="true"> 1 Air-conditioned bedroom with ceiling fan</li>
+                                    <li>
+                                        <ul class="list-unstyled list-inline" id="capacity">
+                                            <img src="images/Icon-Cabin.png" height="25px" width="auto" aria-hidden="true">
+                                            <li>Capacity</li>
+                                            <li>-</li>
+                                            <li>Day: <i class="fa fa-user-times fa-lg"></i> 8</li>
+                                            <li> Night: <i class="fa fa-user-times fa-lg"></i> 2</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p>A self-contained unit ideal for couples! Impeccably designed to make your stay comfortable.</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <h2>COURTYARD<br>VIEW</h2>
+                                <div class="price-tag">
+                                    <ul class="list-unstyled">
+                                        <li><img src="images/Icon-Price-Tag.png" height="60px" width="auto" aria-hidden="true"></li>
+                                        <li><span>FROM</span><br> S$140*</li>
+                                    </ul>
+                                    <a class="btn btn-default btn-lg" href="#" role="button">BOOK NOW</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12" id="arrow-menu-up">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve"><span class="glyphicon glyphicon-menu-up"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end of 12th Accordion -->
+                <div class="panel panel-default"> <!-- start of 13th Accordion for Netheravon Terraces Without BBQ pit (1 Bedroom) -->
+                     <div class="panel-heading" role="tab" id="headingThirteen">
+                         <h4 class="panel-title">
+                             <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                             <div class="hidden-xs">
+                             <span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Netheravon Terraces Without BBQ pit (1 Bedroom) <span class="glyphicon glyphicon-menu-down"></span>
+                             </div>
+                             <div class="visible-xs">
+                             <span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Netheravon Terraces w/o BBQ pit (1 BR) <span class="glyphicon glyphicon-menu-down"></span>
+                             </div>
+                             </a>
+                         </h4>
+                     </div>
+                     <div id="collapseThirteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThirteen">
+                         <div class="panel-body">
+                             <!-- Carousel for Netheravon Terraces Without BBQ pit (1 Bedroom) -->
+                             <div id="changi-netheravon" class="carousel slide" data-ride="carousel">
+                                 <!-- Indicators -->
+                                 <ol class="carousel-indicators">
+                                     <li data-target="#changi-netheravon" data-slide-to="0" class="active"></li>
+                                     <li data-target="#changi-netheravon" data-slide-to="1"></li>
+                                     <li data-target="#changi-netheravon" data-slide-to="2"></li>
+                                     <li data-target="#changi-netheravon" data-slide-to="3"></li>
+                                </ol>
+                                 <!-- Wrapper for slides -->
+                                 <div class="carousel-inner" role="listbox">
+                                     <div class="item active">
+                                         <img src="images/Changi_NetheravonTerraces1.jpg" width="100%" height="auto" alt="...">
+                                     </div>
+                                     <div class="item">
+                                         <img src="images/Changi_NetheravonTerraces2.jpg" width="100%" height="auto" alt="...">
+                                     </div>
+                                     <div class="item">
+                                         <img src="images/Changi_NetheravonTerraces3.jpg" width="100%" height="auto" alt="...">
+                                     </div>
+                                     <div class="item">
+                                         <img src="images/Changi_NetheravonTerraces4.jpg" width="100%" height="auto" alt="...">
+                                     </div>
+                                 </div>
+                                 <!-- Controls -->
+                                 <a class="left carousel-control" href="#changi-netheravon" role="button" data-slide="prev">
+                                     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                     <span class="sr-only">Previous</span>
+                                 </a>
+                                 <a class="right carousel-control" href="#changi-netheravon" role="button" data-slide="next">
+                                     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                     <span class="sr-only">Next</span>
+                                 </a>
+                             </div>
+                             <div class="col-sm-9">
+                                 <ul class="list-unstyled">
+                                     <li><img src="images/Icon-Living-Room.png" height="25px" width="auto" aria-hidden="true"> Living room set with TV</li>
+                                     <li><img src="images/Icon-Dining-Room.png" height="25px" width="auto" aria-hidden="true"> Dining area</li>
+                                     <li><img src="images/Icon-Shower.png" height="25px" width="auto" aria-hidden="true"> Bathrooms with heated shower</li>
+                                     <li><img src="images/Icon-Cooker.png" height="25px" width="auto" aria-hidden="true"> Fully equipped kitchen</li>
+                                     <li><img src="images/Icon-Sleeping-Bed.png" height="25px" width="auto" aria-hidden="true"> 1 Air-conditioned bedroom with ceiling fan</li>
+                                     <li>
+                                         <ul class="list-unstyled list-inline" id="capacity">
+                                             <img src="images/Icon-Cabin.png" height="25px" width="auto" aria-hidden="true">
+                                             <li>Capacity</li>
+                                             <li>-</li>
+                                             <li>Day: <i class="fa fa-user-times fa-lg"></i> 8</li>
+                                             <li> Night: <i class="fa fa-user-times fa-lg"></i> 2</li>
+                                         </ul>
+                                     </li>
+                                 </ul>
+                                 <p>A self-contained unit ideal for couples! Impeccably designed to make your stay comfortable.</p>
+                             </div>
+                             <div class="col-sm-3">
+                                 <h2>COURTYARD<br>VIEW</h2>
+                                 <div class="price-tag">
+                                     <ul class="list-unstyled">
+                                         <li><img src="images/Icon-Price-Tag.png" height="60px" width="auto" aria-hidden="true"></li>
+                                         <li><span>FROM</span><br> S$140*</li>
+                                     </ul>
+                                     <a class="btn btn-default btn-lg" href="#" role="button">BOOK NOW</a>
+                                 </div>
+                             </div>
+                             <div class="col-xs-12" id="arrow-menu-up">
+                                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen"><span class="glyphicon glyphicon-menu-up"></span></a>
+                             </div>
+                         </div>
+                     </div>
+                 </div> <!-- end of 13th Accordion -->
+                 <div class="panel panel-default"> <!-- start of 14th Accordion for Yacht Club Bungalow (2 Bedroom) -->
+                     <div class="panel-heading" role="tab" id="headingFourteen">
+                         <h4 class="panel-title">
+                             <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Yacht Club Bungalow (2 Bedroom) <span class="glyphicon glyphicon-menu-down"></span></a>
+                         </h4>
+                     </div>
+                     <div id="collapseFourteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFourteen">
+                         <div class="panel-body">
+                             <img class="img-responsive center-block" src="images/Changi_YachtClubBungalow2Bed.jpg" width="100%" height="auto" alt="...">
+                             <div class="col-sm-9">
+                                 <ul class="list-unstyled">
+                                     <li><img src="images/Icon-Living-Room.png" height="25px" width="auto" aria-hidden="true"> Living room with TV</li>
+                                     <li><img src="images/Icon-Dining-Room.png" height="25px" width="auto" aria-hidden="true"> Dining room</li>
+                                     <li><img src="images/Icon-Shower.png" height="25px" width="auto" aria-hidden="true"> Bathrooms with heated shower</li>
+                                     <li><img src="images/Icon-BBQ.png" height="25px" width="auto" aria-hidden="true"> Sheltered BBQ Pit</li>
+                                     <li><img src="images/Icon-Cooker.png" height="25px" width="auto" aria-hidden="true"> Fully equipped kitchen</li>
+                                     <li><img src="images/Icon-Sleeping-Bed.png" height="25px" width="auto" aria-hidden="true"> 2 Air-conditioned bedrooms with ceiling fan</li>
+                                     <li>
+                                         <ul class="list-unstyled list-inline" id="capacity">
+                                             <img src="images/Icon-Cabin.png" height="25px" width="auto" aria-hidden="true">
+                                             <li>Capacity</li>
+                                             <li>-</li>
+                                             <li>Day: <i class="fa fa-user-times fa-lg"></i> 10</li>
+                                             <li> Night: <i class="fa fa-user-times fa-lg"></i> 4</li>
+                                         </ul>
+                                     </li>
+                                 </ul>
+                                 <p>Now with our fully-sheltered BBQ pits, be sure to enjoy BBQ parties come rain or shine!</p>
+                             </div>
+                             <div class="col-sm-3">
+                                 <h2>GARDEN<br>VIEW</h2>
+                                 <div class="price-tag">
+                                     <ul class="list-unstyled">
+                                         <li><img src="images/Icon-Price-Tag.png" height="60px" width="auto" aria-hidden="true"></li>
+                                         <li><span>FROM</span><br> S$140*</li>
+                                     </ul>
+                                     <a class="btn btn-default btn-lg" href="#" role="button">BOOK NOW</a>
+                                 </div>
+                             </div>
+                             <div class="col-xs-12" id="arrow-menu-up">
+                                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen"><span class="glyphicon glyphicon-menu-up"></span></a>
+                             </div>
+                         </div>
+                     </div>
+                 </div> <!-- end of 14th Accordion -->
+                 <div class="panel panel-default"> <!-- start of 15th Accordion for Yacht Club Bungalow (3 Bedroom) -->
+                     <div class="panel-heading" role="tab" id="headingFifteen">
+                         <h4 class="panel-title">
+                             <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Yacht Club Bungalow (3 Bedroom) <span class="glyphicon glyphicon-menu-down"></span></a>
+                         </h4>
+                     </div>
+                     <div id="collapseFifteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFifteen">
+                         <div class="panel-body">
+                             <img class="img-responsive center-block" src="images/Changi_YachtClubBungalow3Bed.jpg" width="100%" height="auto" alt="...">
+                             <div class="col-sm-9">
+                                 <ul class="list-unstyled">
+                                     <li><img src="images/Icon-Living-Room.png" height="25px" width="auto" aria-hidden="true"> Living room with TV and games table</li>
+                                     <li><img src="images/Icon-Dining-Room.png" height="25px" width="auto" aria-hidden="true"> Dining room</li>
+                                     <li><img src="images/Icon-Shower.png" height="25px" width="auto" aria-hidden="true"> Bathrooms with heated shower</li>
+                                     <li><img src="images/Icon-BBQ.png" height="25px" width="auto" aria-hidden="true"> Sheltered BBQ Pit</li>
+                                     <li><img src="images/Icon-Cooker.png" height="25px" width="auto" aria-hidden="true"> Fully equipped kitchen</li>
+                                     <li><img src="images/Icon-Sleeping-Bed.png" height="25px" width="auto" aria-hidden="true"> 3 Air-conditioned bedrooms with ceiling fan</li>
+                                     <li>
+                                         <ul class="list-unstyled list-inline" id="capacity">
+                                             <img src="images/Icon-Cabin.png" height="25px" width="auto" aria-hidden="true">
+                                             <li>Capacity</li>
+                                             <li>-</li>
+                                             <li>Day: <i class="fa fa-user-times fa-lg"></i> 16</li>
+                                             <li> Night: <i class="fa fa-user-times fa-lg"></i> 6</li>
+                                         </ul>
+                                     </li>
+                                 </ul>
+                                 <p>Enjoy the tranquility of the surroundings along with the foliage that adds to the grandeur of the area.</p>
+                             </div>
+                             <div class="col-sm-3">
+                                 <h2>GARDEN<br>VIEW</h2>
+                                 <div class="price-tag">
+                                     <ul class="list-unstyled">
+                                         <li><img src="images/Icon-Price-Tag.png" height="60px" width="auto" aria-hidden="true"></li>
+                                         <li><span>FROM</span><br> S$205*</li>
+                                     </ul>
+                                     <a class="btn btn-default btn-lg" href="#" role="button">BOOK NOW</a>
+                                 </div>
+                             </div>
+                             <div class="col-xs-12" id="arrow-menu-up">
+                                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen"><span class="glyphicon glyphicon-menu-up"></span></a>
+                             </div>
+                         </div>
+                     </div>
+                 </div> <!-- end of 15th Accordion -->
+                 <div class="panel panel-default"> <!-- start of 16th Accordion for Yacht Club Chalet (5 Bedroom) -->
+                     <div class="panel-heading" role="tab" id="headingSixteen">
+                         <h4 class="panel-title">
+                             <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Yacht Club Chalet (5 Bedroom) <span class="glyphicon glyphicon-menu-down"></span></a>
+                         </h4>
+                     </div>
+                     <div id="collapseSixteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSixteen">
+                         <div class="panel-body">
+                             <img class="img-responsive center-block" src="images/Changi_YachtClubChalet.jpg" width="100%" height="auto" alt="...">
+                             <div class="col-sm-9">
+                                 <ul class="list-unstyled">
+                                     <li><img src="images/Icon-Living-Room.png" height="25px" width="auto" aria-hidden="true"> Living room with TV and games table</li>
+                                     <li><img src="images/Icon-Dining-Room.png" height="25px" width="auto" aria-hidden="true"> Dining room</li>
+                                     <li><img src="images/Icon-Shower.png" height="25px" width="auto" aria-hidden="true"> Bathrooms with heated shower</li>
+                                     <li><img src="images/Icon-BBQ.png" height="25px" width="auto" aria-hidden="true"> Sheltered BBQ Pit</li>
+                                     <li><img src="images/Icon-Cooker.png" height="25px" width="auto" aria-hidden="true"> Fully equipped kitchen</li>
+                                     <li><img src="images/Icon-Sleeping-Bed.png" height="25px" width="auto" aria-hidden="true"> 5 Air-conditioned bedrooms with wall/ceiling fan</li>
+                                     <li>
+                                         <ul class="list-unstyled list-inline" id="capacity">
+                                             <img src="images/Icon-Cabin.png" height="25px" width="auto" aria-hidden="true">
+                                             <li>Capacity</li>
+                                             <li>-</li>
+                                             <li>Day: <i class="fa fa-user-times fa-lg"></i> 25</li>
+                                             <li> Night: <i class="fa fa-user-times fa-lg"></i> 10</li>
+                                         </ul>
+                                     </li>
+                                 </ul>
+                                 <p>Relax and rejuvenate at Yacht Club Chalet.</p>
+                             </div>
+                             <div class="col-sm-3">
+                                 <h2>GARDEN<br>VIEW</h2>
+                                 <div class="price-tag">
+                                     <ul class="list-unstyled">
+                                         <li><img src="images/Icon-Price-Tag.png" height="60px" width="auto" aria-hidden="true"></li>
+                                         <li><span>FROM</span><br> S$210*</li>
+                                     </ul>
+                                     <a class="btn btn-default btn-lg" href="#" role="button">BOOK NOW</a>
+                                 </div>
+                             </div>
+                             <div class="col-xs-12" id="arrow-menu-up">
+                                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen"><span class="glyphicon glyphicon-menu-up"></span></a>
+                             </div>
+                         </div>
+                     </div>
+                 </div> <!-- end of 15th Accordion -->
+            </div>
+            <!-- end of Accomodation section using Accordion -->
+            <a class="circle-arrow-up" href="#"><span class="glyphicon glyphicon-circle-arrow-up"></span></a>
+            <!-- Resort Map Section -->
+            <div class="row" id="resort-map">
+                <div class="col-xs-12">
+                    <h1><img src="images/Icon-Flip-Flops.png" height="40px" width="auto" aria-hidden="true"> Resort Map</h1>
+                    <img class="img-responsive center-block img-with-border" src="images/Changi_ResortMap.png" width="100%" height="auto">
+                </div>
+            </div>
+            <!-- end of Resort Map Section -->
+            <a class="circle-arrow-up" href="#"><span class="glyphicon glyphicon-circle-arrow-up"></span></a>
+            <!-- Location Section -->
+            <div class="row" id="resort-location">
+                <div class="col-xs-12">
+                    <h1><img src="images/Icon-Flip-Flops.png" height="40px" width="auto" aria-hidden="true"> Location</h1>
+                    <div class="col-sm-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7977.301082641028!2d103.96767152359591!3d1.3862833216793156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da3c22c460caf5%3A0xbf55b66dc58f9370!2sAloha+Changi+Resort!5e0!3m2!1sen!2ssg!4v1502888594361" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3>Getting Here</h3>
+                        <h4>By Car</h4>
+                        <p><span class="glyphicon glyphicon-road" aria-hidden="true"></span> From the Tampines Expressway (TPE), exit at Loyang Avenue. Travel along Loyang Avenue and turn left at juction with Changi Village Road. Travel along Changi Village Road until it joins with Netheravon Road. </p>
+                        <h4>By MRT Train</h4>
+                        <p><i class="fa fa-subway" aria-hidden="true"></i> From Pasir Ris MRT station, we provide free shuttle ser vice to and fro Aloha Changi, which includes a trip with stopover at the Fairy Point Chalets. Pls refer to the Shuttle Bus schedule.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of Location Section -->
+            <a class="circle-arrow-up" href="#"><span class="glyphicon glyphicon-circle-arrow-up"></span></a>
+            <!-- Shuttle Bus Section -->
+            <div class="row" id="shuttle-bus">
+                <div class="col-sm-12 hidden-xs">
+                    <h1><img src="images/Icon-Flip-Flops.png" height="40px" width="auto" aria-hidden="true"> Shuttle Bus</h1>
+                    <img class="img-responsive center-block img-with-border" src="images/Changi_ShuttleBus.jpg" width="100%" height="auto">
+                </div>
+                <div class="col-sm-12 visible-xs">
+                    <h1><img src="images/Icon-Flip-Flops.png" height="40px" width="auto"> Shuttle Bus</h1>
+                    <img class="img-responsive center-block" src="images/Changi_ShuttleBus1.jpg" width="100%" height="auto" alt="...">
+                    <img class="img-responsive center-block" src="images/Changi_ShuttleBus2.jpg" width="100%" height="auto" alt="...">
+                    <img class="img-responsive center-block" src="images/Changi_ShuttleBus3.jpg" width="100%" height="auto" alt="...">
+                    <img class="img-responsive center-block" src="images/Changi_ShuttleBus4.jpg" width="100%" height="auto" alt="...">
+                    <img class="img-responsive center-block" src="images/Changi_ShuttleBus5.jpg" width="100%" height="auto" alt="...">
+                    <img class="img-responsive center-block" src="images/Changi_ShuttleBus6.jpg" width="100%" height="auto" alt="...">
+                </div>
+            </div> <!-- end of Shuttle Bus Section -->
+            <a class="circle-arrow-up" href="#"><span class="glyphicon glyphicon-circle-arrow-up"></span></a>
+        </div> <!-- Aloha Changi Main Body end div-->
+        <footer class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h5>Disclaimer:</h5>
+                        <p>Purpose of this website is for CA3 Assignment Submission only</p>
+                        <p>For the purpose of this assignment, all photographic images used in this website are downloaded from www.aloharesorts.com.sg</p>
+                        <p>Credits to be given to www.icons8.com for all the free icons used in this website</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5>Navigation:</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Regulations &amp; Information</a></li>
+                            <li><a href="#">Privacy Statement</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5>Updates:</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">What's Happening</a></li>
+                            <li><a href="#">Upcoming Events</a></li>
+                            <li><a href="#">Aloha News</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row" id="copyright">
+                    <div class="col-xs-12">
+                        <h5>Copyright &copy; 2017 All Rights Reserved. Aloha Resorts.</h5>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+	    <!-- Custom JS -->
+	    <script src="includes/js/script.js"></script>
+	</body>
+</html>

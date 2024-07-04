@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<!--
+    		Author: 	Stephanie Ang
+    		Completed:  20 Aug 2017
+    		Notes: 		Assignment 3
+    	-->
+    	<title>aloha...your place to relax &amp; enjoy</title>
+    	<!-- Bootstrap CSS -->
+    	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Custom CSS -->
+    	<link href="includes/css/styles.css" rel="stylesheet">
+		<!-- Font Awesome CSS -->
+    	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+        <link rel="shortcut icon" href="images/favicon.png">
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+        <link rel="icon" sizes="192x192" href="images/android.png">
+ 	</head>
+ 	<body>
+        <!-- Social Media Icons on top -->
+        <div class="container" id="social-media-icon-top">
+           <ul class="navbar-nav navbar-right">
+                <li><a href="https://www.facebook.com/pages/Aloha-Loyang-Seaview-Bungalow/203583413002008" target="_blank"><img src="images/Icon-Facebook.png" width="25px" height="auto"></a></li>
+                <li><a href="#modial-contact-us" role="button" data-toggle="modal"><img src="images/Icon-Message.png" width="25px" height="auto"></a></li>
+            </ul>
+        </div>
+        <!-- Navigation Bar & Logo -->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/Logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="sub_changi.html"><span>aloha</span><br>Changi</a></li>
+                        <li class="active"><a href="#"><span>aloha</span><br>Loyang</a></li>
+                        <li><a href="sub_cameron.html"><span>aloha</span><br>Cameron</a></li>
+                        <li><a href="sub_fraser.html"><span>aloha</span><br>Fraser</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Chalet Booking Panel (Visible on tablets, 768px and up) -->
+        <div class="container-fluid hidden-xs" id="booking-panel">
+            <div class="container">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="ResortName">Book your getaway</label>
+                        <br class="visible-sm">
+                        <select class="form-control">
+                            <option></option>
+                            <option>aloha Changi</option>
+                            <option>aloha Loyang</option>
+                            <option>aloha Cameron</option>
+                            <option>aloha Fraser</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Check-in">Check-In:</label>
+                        <br class="visible-sm">
+                        <input type="date" class="form-control" id="Check-In">
+                    </div>
+                    <div class="form-group">
+                        <label for="Check-in">Check-Out:</label>
+                        <br class="visible-sm">
+                        <input type="date" class="form-control" id="Check-Out">
+                    </div>
+                    <button type="submit" class="btn btn-default btn-lg">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!-- Social Media & Phone Icons (Visible on small mobile devices) -->
+        <div class="container-fluid visible-xs">
+            <h1><span>aloha</span> Loyang</h1>
+            <ul class="list-unstyled mobile-icons-header">
+                <li><a href="https://www.facebook.com/pages/Aloha-Loyang-Seaview-Bungalow/203583413002008" target="_blank"><img src="images/Icon-Facebook.png" height="50px" width="auto"></a></li>
+                <li><a href="#modial-contact-us" role="button" data-toggle="modal"><img src="images/Icon-Message.png" width="50px" height="auto"></a></li>
+                <li><a href="#"><img src="images/Icon-Phone.png" height="50px" width="auto"></a></li>
+            </ul>
+        </div>
+        <!-- Social Media & Phone Icons (Visible on tablets, 768px and up) -->
+        <div class="container visible-sm">
+            <ul class="list-unstyled mobile-icons-header">
+                <li><a href="https://www.facebook.com/pages/Aloha-Loyang-Seaview-Bungalow/203583413002008" target="_blank"><img src="images/Icon-Facebook.png" height="35px" width="auto"></a></li>
+                <li><a href="#modial-contact-us" role="button" data-toggle="modal"><img src="images/Icon-Message.png" width="35px" height="auto"></a></li>
+            </ul>
+        </div>
+        <!-- Contact Us Form in a "Mondial Window" -->
+        <div class="modal fade" id="modial-contact-us" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Contact Us</h4>
+                    </div>
+                    <div class="modal-body">
+                         <form class="contact-form" action="results.html">
+                            <fieldset class="contactinfo">
+                               <label for="nameinput" class="control-label">
+                                  Name
+                                  <input class="form-control" type="text" name="name" id="nameinput" placeholder="First & Last Name" required>
+                               </label><br>
+                               <label for="emailinput" class="control-label">
+                                  Email
+                                  <input class="form-control" type="email" name="email" id="emailinput" placeholder="address@example.com" required>
+                               </label><br>
+                               <label for="phoneinput" class="control-label">
+                                    Phone
+                                    <input class="form-control" type="tel" name="phone" id="phoneinput" placeholder="+65-12345678" required>
+                               </label><br>
+                            </fieldset>
+                            <fieldset class="additionalinfo">
+                               <label for="other-info" class="control-label">
+                                  Message<br>
+                                  <textarea class="form-control" name="other-info" id="other-info" rows="5" cols="50" required></textarea>
+                               </label>
+                            </fieldset>
+                            <fieldset class="submitbutton">
+                                <button type="submit" class="btn btn-info">Send</button>
+                            </fieldset>
+                         </form>
+                    </div>
+                    <hr>
+                    <div class="feedback-preview">
+                        <div class="row">
+                           <div class="col-sm-3">
+                              <p>To: </p>
+                           </div>
+                           <div class="col-sm-9">
+                              <p>Aloha Loyang &amp; Resorts Headquarters</p>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-sm-3">
+                              <p>From:</p>
+                           </div>
+                           <div class="col-sm-9">
+                              <p class="feedback-from"></p>
+                           </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p>Email:</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="feedback-email"></p>
+                           </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p>Phone:</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="feedback-phone"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p>Message:</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="feedback-content"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end of Contact Us Form in a "Mondial Window" -->
+        <!-- Page Navigation Panel with Button Icons -->
+        <div class="container">
+            <ul class="nav nav-pills">
+                <li role="presentation"><a class="btn btn-default" href="#accordion"><img src="images/Icon-Bed.png" height="25px" width="auto" aria-hidden="true"> Accommodation</a></li>
+                <li role="presentation"><a class="btn btn-default" href="#facilities"><img src="images/Icon-Playground.png" height="25px" width="auto" aria-hidden="true"> Facilities</a></li>
+                <li role="presentation"><a class="btn btn-default" href="#resort-map"><img src="images/Icon-Map-Marker.png" height="25px" width="auto" aria-hidden="true"> Resort Map</a></li>
+                <li role="presentation"><a class="btn btn-default" href="#resort-location"><img src="images/Icon-Google-Map.png" height="25px" width="auto" aria-hidden="true"> Location</a></li>
+                <li role="presentation"><a class="btn btn-default" href="#shuttle-bus"><img src="images/Icon-Bus.png" height="25px" width="auto" aria-hidden="true"> Shuttle Bus</a></li>
+                <li role="presentation" class="hidden-xs"><a class="btn btn-default"><img src="images/Icon-Phone.png" height="25px" width="auto" aria-hidden="true"> +65 6581 9033</a></li>
+            </ul>
+        </div>
+        <!-- Aloha Loyang Main Body-->
+        <div class="container alohaLoyang">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>Aloha Loyang offers 38 chalets ranging from 2 to 4 bedrooms with amentities that gives you the perfect getaway experience for you and your loved ones to enjoy</p>
+                    <p>Breathe in the fresh air as you explore the area; with many interesting activities for you to consider. Swim in the swimming pool or take a stroll down the beach and enjoy the sunset with your loved ones. End the night with a sumptuous BBQ party or cook a dinner meal with the kitchen facilities available in each chalet</p>
+                    <p>Aloha Loyang also offers a multi-purpose court and seminar room for your private functions.</p>
+                </div>
+            </div>
+            <!-- Accommodation Section using Accordion -->
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <h1><img src="images/Icon-Flip-Flops.png" height="40px" width="auto" aria-hidden="true"> Accomodation</h1>
+                <div class="panel panel-default"> <!-- start of 1st Accordion for Garden Bungalows -->
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Garden Bungalows (4 Bedroom) <span class="glyphicon glyphicon-menu-down"></span></a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            <!-- Carousel for Aloha Loyang Garden Bungalows -->
+                            <div id="loyang-garden-bungalows" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#loyang-garden-bungalows" data-slide-to="0" class="active"></li>
+                                    <li data-target="#loyang-garden-bungalows" data-slide-to="1"></li>
+                                    <li data-target="#loyang-garden-bungalows" data-slide-to="2"></li>
+                                    <li data-target="#loyang-garden-bungalows" data-slide-to="3"></li>
+                                    <li data-target="#loyang-garden-bungalows" data-slide-to="4"></li>
+                                    <li data-target="#loyang-garden-bungalows" data-slide-to="5"></li>
+                                    <li data-target="#loyang-garden-bungalows" data-slide-to="6"></li>
+                                </ol>
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <img src="images/Loyang_GardenBungalow1.jpg" width="100%" height="auto" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/Loyang_GardenBungalow2.jpg" width="100%" height="auto" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/Loyang_GardenBungalow3.jpg" width="100%" height="auto" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/Loyang_GardenBungalow4.jpg" width="100%" height="auto" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/Loyang_GardenBungalow5.jpg" width="100%" height="auto" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/Loyang_GardenBungalow6.jpg" width="100%" height="auto" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/Loyang_GardenBungalow7.jpg" width="100%" height="auto" alt="...">
+                                    </div>
+                                </div>
+                                <!-- Controls -->
+                                <a class="left carousel-control" href="#loyang-garden-bungalows" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#loyang-garden-bungalows" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            <div class="col-sm-9">
+                                <ul class="list-unstyled">
+                                    <li><img src="images/Icon-Living-Room.png" height="25px" width="auto" aria-hidden="true"> Fully air-conditioned living room with TV and games table</li>
+                                    <li><img src="images/Icon-Dining-Room.png" height="25px" width="auto" aria-hidden="true"> Air-conditioned dining room</li>
+                                    <li><img src="images/Icon-Shower.png" height="25px" width="auto" aria-hidden="true"> Bathrooms with heated shower</li>
+                                    <li><img src="images/Icon-BBQ.png" height="25px" width="auto" aria-hidden="true"> BBQ Pit</li>
+                                    <li><img src="images/Icon-Cooker.png" height="25px" width="auto" aria-hidden="true"> Fully equipped kitchen</li>
+                                    <li><img src="images/Icon-Sleeping-Bed.png" height="25px" width="auto" aria-hidden="true"> 4 Air-conditioned bedrooms with wall fan</li>
+                                    <li>
+                                        <ul class="list-unstyled list-inline" id="capacity">
+                                            <img src="images/Icon-Cabin.png" height="25px" width="auto" aria-hidden="true">
+                                            <li>Capacity</li>
+                                            <li>-</li>
+                                            <li>Day: <i class="fa fa-user-times fa-lg"></i> 40</li>
+                                            <li> Night: <i class="fa fa-user-times fa-lg"></i> 8</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p>Relax in comfort in the single-storey bungalows with the facilities and amenities offered.</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <h2>GARDEN<br>VIEW</h2>
+                                <div class="price-tag">
+                                    <ul class="list-unstyled">
+                                        <li><img src="images/Icon-Price-Tag.png" height="60px" width="auto" aria-hidden="true"></li>
+                                        <li><span>FROM</span><br> S$345*</li>
+                                    </ul>
+                                    <a class="btn btn-default btn-lg" href="#" role="button">BOOK NOW</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12" id="arrow-menu-up">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span class="glyphicon glyphicon-menu-up"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end of 1st Accordion -->
+                <div class="panel panel-default"> <!-- start of 2nd Accordion for Garden Terraces -->
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Garden Terraces (2 Bedroom) <span class="glyphicon glyphicon-menu-down"></span></a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                            <img class="img-responsive center-block" src="images/Loyang_GardenTerraces.jpg" width="100%" height="auto" alt="...">
+                            <div class="col-sm-9">
+                                <ul class="list-unstyled">
+                                    <li><img src="images/Icon-Living-Room.png" height="25px" width="auto" aria-hidden="true"> Fully air-conditioned living room with TV and games table</li>
+                                    <li><img src="images/Icon-Dining-Room.png" height="25px" width="auto" aria-hidden="true"> Air-conditioned dining room</li>
+                                    <li><img src="images/Icon-Shower.png" height="25px" width="auto" aria-hidden="true"> Bathrooms with heated shower</li>
+                                    <li><img src="images/Icon-BBQ.png" height="25px" width="auto" aria-hidden="true"> BBQ Pit</li>
+                                    <li><img src="images/Icon-Cooker.png" height="25px" width="auto" aria-hidden="true"> Fully equipped kitchen</li>
+                                    <li><img src="images/Icon-Sleeping-Bed.png" height="25px" width="auto" aria-hidden="true"> 2 Air-conditioned bedrooms with wall fan</li>
+                                    <li>
+                                        <ul class="list-unstyled list-inline" id="capacity">
+                                            <img src="images/Icon-Cabin.png" height="25px" width="auto" aria-hidden="true">
+                                            <li>Capacity</li>
+                                            <li>-</li>
+                                            <li>Day: <i class="fa fa-user-times fa-lg"></i> 20</li>
+                                            <li> Night: <i class="fa fa-user-times fa-lg"></i> 6</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p>Garden Terraces offer a home away from home experience to give you the ultimate vacation.</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <h2>COURTYARD<br>VIEW</h2>
+                                <div class="price-tag">
+                                    <ul class="list-unstyled">
+                                        <li><img src="images/Icon-Price-Tag.png" height="60px" width="auto" aria-hidden="true"></li>
+                                        <li><span>FROM</span><br> S$220*</li>
+                                    </ul>
+                                    <a class="btn btn-default btn-lg" href="#" role="button">BOOK NOW</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12" id="arrow-menu-up">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><span class="glyphicon glyphicon-menu-up"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end of 2nd Accordion -->
+                <div class="panel panel-default"> <!-- start of 3rd Accordion for Pool Terraces -->
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Pool Terraces (4 Bedroom) <span class="glyphicon glyphicon-menu-down"></span></a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                            <img class="img-responsive center-block" src="images/Loyang_PoolTerraces.jpg" width="100%" height="auto" alt="...">
+                            <div class="col-sm-9">
+                                <ul class="list-unstyled">
+                                    <li><img src="images/Icon-Living-Room.png" height="25px" width="auto" aria-hidden="true"> Fully air-conditioned living room with TV and games table</li>
+                                    <li><img src="images/Icon-Dining-Room.png" height="25px" width="auto" aria-hidden="true"> Air-conditioned dining room</li>
+                                    <li><img src="images/Icon-Shower.png" height="25px" width="auto" aria-hidden="true"> Bathrooms with heated shower</li>
+                                    <li><img src="images/Icon-BBQ.png" height="25px" width="auto" aria-hidden="true"> BBQ Pit</li>
+                                    <li><img src="images/Icon-Cooker.png" height="25px" width="auto" aria-hidden="true"> Fully equipped kitchen with new addition of induction cooker</li>
+                                    <li><img src="images/Icon-Sleeping-Bed.png" height="25px" width="auto" aria-hidden="true"> 4 Air-conditioned bedrooms with wall fan</li>
+                                    <li>
+                                        <ul class="list-unstyled list-inline" id="capacity">
+                                            <img src="images/Icon-Cabin.png" height="25px" width="auto" aria-hidden="true">
+                                            <li>Capacity</li>
+                                            <li>-</li>
+                                            <li>Day: <i class="fa fa-user-times fa-lg"></i> 40</li>
+                                            <li> Night: <i class="fa fa-user-times fa-lg"></i> 8</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p>Relax and unwind at Pool Terraces! Take a dip in the swimming pool and spend quality time with your family basking in the sun.</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <h2>POOLSIDE<br>VIEW</h2>
+                                <div class="price-tag">
+                                    <ul class="list-unstyled">
+                                        <li><img src="images/Icon-Price-Tag.png" height="60px" width="auto" aria-hidden="true"></li>
+                                        <li><span>FROM</span><br> S$420*</li>
+                                    </ul>
+                                    <a class="btn btn-default btn-lg" href="#" role="button">BOOK NOW</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12" id="arrow-menu-up">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><span class="glyphicon glyphicon-menu-up"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end of 3rd Accordion -->
+                <div class="panel panel-default"> <!-- start of 4th Accordion for Seaview Bungalows -->
+                    <div class="panel-heading" role="tab" id="headingFour">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Seaview Bungalows (4 Bedroom) <span class="glyphicon glyphicon-menu-down"></span></a>
+                        </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                        <div class="panel-body">
+                            <img class="img-responsive center-block" src="images/Loyang_SeaViewBungalow.jpg" width="100%" height="auto" alt="...">
+                            <div class="col-sm-9">
+                                <ul class="list-unstyled">
+                                    <li><img src="images/Icon-Living-Room.png" height="25px" width="auto" aria-hidden="true"> Fully air-conditioned living room with TV and games table</li>
+                                    <li><img src="images/Icon-Dining-Room.png" height="25px" width="auto" aria-hidden="true"> Air-conditioned dining room</li>
+                                    <li><img src="images/Icon-Shower.png" height="25px" width="auto" aria-hidden="true"> Bathrooms with heated shower</li>
+                                    <li><img src="images/Icon-BBQ.png" height="25px" width="auto" aria-hidden="true"> BBQ Pit</li>
+                                    <li><img src="images/Icon-Cooker.png" height="25px" width="auto" aria-hidden="true"> Fully equipped kitchen</li>
+                                    <li><img src="images/Icon-Sleeping-Bed.png" height="25px" width="auto" aria-hidden="true"> 4 Air-conditioned bedrooms with wall fan</li>
+                                    <li>
+                                        <ul class="list-unstyled list-inline" id="capacity">
+                                            <img src="images/Icon-Cabin.png" height="25px" width="auto" aria-hidden="true">
+                                            <li>Capacity</li>
+                                            <li>-</li>
+                                            <li>Day: <i class="fa fa-user-times fa-lg"></i> 40</li>
+                                            <li> Night: <i class="fa fa-user-times fa-lg"></i> 8</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p>Located near to the sea, embark on a tranquil and relaxing experience as you breathe in the fresh sea breeze. Our Seaview Bungalow 1 has been refurbished to provide you a better experience.</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <h2>SEA<br>VIEW</h2>
+                                <div class="price-tag">
+                                    <ul class="list-unstyled">
+                                        <li><img src="images/Icon-Price-Tag.png" height="60px" width="auto" aria-hidden="true"></li>
+                                        <li><span>FROM</span><br> S$345*</li>
+                                    </ul>
+                                    <a class="btn btn-default btn-lg" href="#" role="button">BOOK NOW</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12" id="arrow-menu-up">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><span class="glyphicon glyphicon-menu-up"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end of 4th Accordion -->
+                <div class="panel panel-default"> <!-- start of 5th Accordion for Seaview Terraces -->
+                    <div class="panel-heading" role="tab" id="headingFive">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Seaview Terraces (4 Bedroom) <span class="glyphicon glyphicon-menu-down"></span></a>
+                        </h4>
+                    </div>
+                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                        <div class="panel-body">
+                            <img class="img-responsive center-block" src="images/Loyang_SeaViewTerraces.jpg" width="100%" height="auto" alt="...">
+                            <div class="col-sm-9">
+                                <ul class="list-unstyled">
+                                    <li><img src="images/Icon-Living-Room.png" height="25px" width="auto" aria-hidden="true"> Fully air-conditioned living room with TV and games table</li>
+                                    <li><img src="images/Icon-Dining-Room.png" height="25px" width="auto" aria-hidden="true"> Air-conditioned dining room</li>
+                                    <li><img src="images/Icon-Shower.png" height="25px" width="auto" aria-hidden="true"> Bathrooms with heated shower</li>
+                                    <li><img src="images/Icon-BBQ.png" height="25px" width="auto" aria-hidden="true"> BBQ Pit</li>
+                                    <li><img src="images/Icon-Cooker.png" height="25px" width="auto" aria-hidden="true"> Fully equipped kitchen</li>
+                                    <li><img src="images/Icon-Sleeping-Bed.png" height="25px" width="auto" aria-hidden="true"> 4 Air-conditioned bedrooms with wall fan</li>
+                                    <li>
+                                        <ul class="list-unstyled list-inline" id="capacity">
+                                            <img src="images/Icon-Cabin.png" height="25px" width="auto" aria-hidden="true">
+                                            <li>Capacity</li>
+                                            <li>-</li>
+                                            <li>Day: <i class="fa fa-user-times fa-lg"></i> 40</li>
+                                            <li> Night: <i class="fa fa-user-times fa-lg"></i> 8</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p>Recharge your body, mind and spirit at Sea View Terraces!</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <h2>SEA<br>VIEW</h2>
+                                <div class="price-tag">
+                                    <ul class="list-unstyled">
+                                        <li><img src="images/Icon-Price-Tag.png" height="60px" width="auto" aria-hidden="true"></li>
+                                        <li><span>FROM</span><br> S$420*</li>
+                                    </ul>
+                                    <a class="btn btn-default btn-lg" href="#" role="button">BOOK NOW</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12" id="arrow-menu-up">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive"><span class="glyphicon glyphicon-menu-up"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end of 5th Accordion -->
+            </div>
+            <!-- end of Accomodation section using Accordion -->
+            <a class="circle-arrow-up" href="#"><span class="glyphicon glyphicon-circle-arrow-up"></span></a>
+            <!-- Facilities Section -->
+            <div class="row" id="facilities">
+                <div class="col-xs-12">
+                    <h1><img src="images/Icon-Flip-Flops.png" height="40px" width="auto" aria-hidden="true"> Facilities</h1>
+                    <!-- Carousel for Facilities -->
+                    <div class="carousel slide" id="resort-facilities" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#resort-facilities" data-slide-to="0" class="active"></li>
+                            <li data-target="#resort-facilities" data-slide-to="1"></li>
+                            <li data-target="#resort-facilities" data-slide-to="2"></li>
+                            <li data-target="#resort-facilities" data-slide-to="3"></li>
+                            <li data-target="#resort-facilities" data-slide-to="4"></li>
+                            <li data-target="#resort-facilities" data-slide-to="5"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="images/Loyang_FacilitiesSwimmingPool.jpg" width="100%" height="auto" alt="...">
+                            </div>
+                            <div class="item">
+                                <img src="images/Loyang_FacilitiesPlayground.jpg" width="100%" height="auto" alt="...">
+                            </div>
+                            <div class="item">
+                                <img src="images/Loyang_FacilitiesArcade.jpg" width="100%" height="auto" alt="...">
+                            </div>
+                            <div class="item">
+                                <img src="images/Loyang_FacilitiesMultiPurposeCourt.jpg" width="100%" height="auto" alt="...">
+                            </div>
+                            <div class="item">
+                                <img src="images/Loyang_FacilitiesGlassPavilion.jpg" width="100%" height="auto" alt="...">
+                            </div>
+                            <div class="item">
+                                <img src="images/Loyang_FacilitiesSeminarRooms.jpg" width="100%" height="auto" alt="...">
+                            </div>
+                        </div>
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#resort-facilities" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#resort-facilities" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <h4>Swimming Pool</h4>
+                    <p>Need a tan and fun? Head down to the swimming pool, equipped with slides for the children to have a kicking good time</p>
+                    <h4>Children’s Playroom</h4>
+                    <p>Practice and show your skills at the Arcade. It is also a good place for de-stressing yourself.</p>
+                    <h4>Seminar Centre</h4>
+                    <p>Offers various set-ups for meetings, training and conference, equipped with projectors, audio equipment, whiteboards and flipchart</p>
+                    <h4>BBQ Pits</h4>
+                    <p>Enjoy smoky aromas and grill from the barbeque food with your family and friends</p>
+                </div>
+            </div>
+            <!-- end of Facilities section -->
+            <a class="circle-arrow-up" href="#"><span class="glyphicon glyphicon-circle-arrow-up"></span></a>
+            <!-- Resort Map Section -->
+            <div class="row" id="resort-map">
+                <div class="col-xs-12">
+                    <h1><img src="images/Icon-Flip-Flops.png" height="40px" width="auto" aria-hidden="true"> Resort Map</h1>
+                    <img class="img-responsive center-block img-with-border" src="images/Loyang_ResortMap.jpg" width="100%" height="auto">
+                </div>
+            </div>
+            <!-- end of Resort Map Section -->
+            <a class="circle-arrow-up" href="#"><span class="glyphicon glyphicon-circle-arrow-up"></span></a>
+            <!-- Location Section -->
+            <div class="row" id="resort-location">
+                <div class="col-xs-12">
+                    <h1><img src="images/Icon-Flip-Flops.png" height="40px" width="auto" aria-hidden="true"> Location</h1>
+                    <div class="col-sm-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6600637925653!2d103.96007191462142!3d1.3806193618607343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da3db5290caa79%3A0x63efa62d3cea5345!2sAloha+Loyang!5e0!3m2!1sen!2ssg!4v1501396115925" width="100%" height="300" frameborder="0" style="border: 0" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3>Getting Here</h3>
+                        <h4>By Car</h4>
+                        <p><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Travelling from Pasir Ris Drive 8, you will turn right into Pasir Ris Drive 1. Cruise along Pasir Ris Drive 1 and turn left to Pasir Ris Drive 6. Travel along Pasir Ris Drive 6 and you will reach Downtown East. From there, follow the signage to Aloha Loyang.</p>
+                        <p><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Travelling from from Loyang Ave, you will be connected to Pasir Ris Drive 3. Travel along Pasir Ris Drive 3 and you will reach Downtown East. From there, follow the signage to Aloha Loyang. Traffic along Pasir Ris Drive 3 can be heavy at times.</p>
+                        <p><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Travelling from Elias Road, you will be connected to Pasir Ris Drive 3. Travel along Pasir Ris Drive 3 and you will reach Downtown East. From there, follow the signage to Aloha Loyang. Traffic along Pasir Ris Drive 3 can be heavy at times.</p>
+                        <h4>By MRT Train</h4>
+                        <p><i class="fa fa-subway" aria-hidden="true"></i> From Pasir Ris MRT station, we provide free shuttle service to and fro Aloha Loyang. Pls refer to the Shuttle Bus schedule.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of Location Section -->
+            <a class="circle-arrow-up" href="#"><span class="glyphicon glyphicon-circle-arrow-up"></span></a>
+            <!-- Shuttle Bus Section -->
+            <div class="row" id="shuttle-bus">
+                <div class="col-sm-12 hidden-xs">
+                    <h1><img src="images/Icon-Flip-Flops.png" height="40px" width="auto" aria-hidden="true"> Shuttle Bus</h1>
+                    <img class="img-responsive center-block img-with-border" src="images/Loyang_ShuttleBus.jpg" width="100%" height="auto">
+                </div>
+                <div class="col-sm-12 visible-xs">
+                    <h1><img src="images/Icon-Flip-Flops.png" height="40px" width="auto"> Shuttle Bus</h1>
+                    <img class="img-responsive center-block" src="images/Loyang_ShuttleBus1.jpg" width="100%" height="auto" alt="...">
+                    <img class="img-responsive center-block" src="images/Loyang_ShuttleBus2.jpg" width="100%" height="auto" alt="....">
+                    <img class="img-responsive center-block" src="images/Loyang_ShuttleBus3.jpg" width="100%" height="auto" alt="...">
+                    <img class="img-responsive center-block" src="images/Loyang_ShuttleBus4.jpg" width="100%" height="auto" alt="...">
+                </div>
+            </div> <!-- end of Shuttle Bus Section -->
+            <a class="circle-arrow-up" href="#"><span class="glyphicon glyphicon-circle-arrow-up"></span></a>
+        </div> <!-- Aloha Loyang Main Body end div-->
+        <footer class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h5>Disclaimer:</h5>
+                        <p>Purpose of this website is for CA3 Assignment Submission only</p>
+                        <p>For the purpose of this assignment, all photographic images used in this website are downloaded from www.aloharesorts.com.sg</p>
+                        <p>Credits to be given to www.icons8.com for all the free icons used in this website</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5>Navigation:</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Regulations &amp; Information</a></li>
+                            <li><a href="#">Privacy Statement</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5>Updates:</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">What's Happening</a></li>
+                            <li><a href="#">Upcoming Events</a></li>
+                            <li><a href="#">Aloha News</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row" id="copyright">
+                    <div class="col-xs-12">
+                        <h5>Copyright &copy; 2017 All Rights Reserved. Aloha Resorts.</h5>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+	    <!-- Custom JS -->
+	    <script src="includes/js/script.js"></script>
+	</body>
+</html>
